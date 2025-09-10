@@ -1,0 +1,43 @@
+{
+  "unit_id": "unit_2",
+  "unit_name": "The Integumentary System",
+  "quests": [
+    {
+      "quest_id": "c1",
+      "quest_title": "Integumentary Trouble",
+      "quest_description": "Defeat the minions and the final boss by mastering all the dermal cell types!",
+      "minion_images": [
+        "image_url_for_minion_1.png",
+        "image_url_for_minion_2.png",
+        "image_url_for_minion_3.png"
+      ],
+      "boss_image": "image_url_for_boss.png",
+      "groups": [
+        {
+          "question": "Detects pain, itch, tickle, and temperature",
+          "answers": ["Free nerve endings"]
+        },
+        {
+          "question": "Detects touch and pressure at the skin surface",
+          "answers": ["Tactile discs"]
+        },
+        {
+          "question": "Detects the onset of touch and low frequency vibrations",
+          "answers": ["Meissner corpuscles"]
+        },
+        {
+          "question": "Detects stretch and pressure",
+          "answers": ["Ruffini corpuscles"]
+        },
+        {
+          "question": "Detects movements on the skin surface that disturb hairs",
+          "answers": ["Hair root plexus"]
+        },
+        {
+          "question": "Detects high-frequency vibration",
+          "answers": ["Pacinian corpuscles"]
+        }
+      ]
+    }
+  ]
+}

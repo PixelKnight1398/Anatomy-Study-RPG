@@ -1,0 +1,389 @@
+{
+  "unit_id": "2",
+  "unit_name": "Axial Skeleton",
+  "quests": [
+    {
+      "quest_id": "7",
+      "quest_title": "Axial Hunt",
+      "quest_description": "Locate and identify the major bones of the skull to defeat your opponents!",
+      "minion_images": [
+        "Images/Monsters/SkullMinion1.png",
+        "Images/Monsters/SkullMinion2.png",
+        "Images/Monsters/SkullMinion3.png"
+      ],
+      "boss_image": "Images/Monsters/SkullBoss.png",
+      "groups": [
+        {
+          "group_name": "Skull Anatomy",
+          "questions": [
+            {
+              "question": "Click the Frontal bone.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/CranialBones1.png",
+              "hotspots": [
+                {
+                  "x": 60,
+                  "y": 10,
+                  "width": 26,
+                  "height": 14,
+                  "answers": ["frontal"]
+                }
+              ]
+            },
+            {
+              "question": "Click the Parietal bone.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/CranialBones1.png",
+              "hotspots": [
+                {
+                  "x": 17,
+                  "y": 4,
+                  "width": 26,
+                  "height": 14,
+                  "answers": ["parietal"]
+                }
+              ]
+            },
+            {
+              "question": "Click the Occipital bone.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/CranialBones1.png",
+              "hotspots": [
+                {
+                  "x": 11,
+                  "y": 72,
+                  "width": 26,
+                  "height": 14,
+                  "answers": ["occipital"]
+                }
+              ]
+            },
+            {
+              "question": "Click the Temporal bone.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/CranialBones1.png",
+              "hotspots": [
+                {
+                  "x": 3,
+                  "y": 42,
+                  "width": 26,
+                  "height": 14,
+                  "answers": ["temporal"]
+                }
+              ]
+            },
+            {
+              "question": "Click the Sphenoid bone.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/CranialBones1.png",
+              "hotspots": [
+                {
+                  "x": 70,
+                  "y": 31,
+                  "width": 26,
+                  "height": 14,
+                  "answers": ["sphenoid"]
+                }
+              ]
+            },
+            {
+              "question": "Click the Ethmoid bone.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/CranialBones1.png",
+              "hotspots": [
+                {
+                  "x": 73,
+                  "y": 50,
+                  "width": 26,
+                  "height": 14,
+                  "answers": ["ethmoid"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "group_name": "Sphenoid Bone: General Anatomy",
+          "questions": [
+            {
+              "question": "Click the Optic Foramen.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/SphenoidBone1.png",
+              "hotspots": [
+                {
+                  "x": 5,
+                  "y": 40,
+                  "width": 11,
+                  "height": 10,
+                  "answers": ["optic foramen"]
+                }
+              ]
+            },
+            {
+              "question": "Click the Sphenoidal Sinus.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/SphenoidBone1.png",
+              "hotspots": [
+                {
+                  "x": 7,
+                  "y": 52,
+                  "width": 11,
+                  "height": 10,
+                  "answers": ["sphenoidal sinus in body", "sphenoidal sinus"]
+                }
+              ]
+            },
+            {
+              "question": "Click the Foramen Rotundum.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/SphenoidBone1.png",
+              "hotspots": [
+                {
+                  "x": 9,
+                  "y": 63,
+                  "width": 11,
+                  "height": 10,
+                  "answers": ["foramen rotundum"]
+                }
+              ]
+            },
+            {
+              "question": "Click the Lesser Wing.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/SphenoidBone1.png",
+              "hotspots": [
+                {
+                  "x": 85,
+                  "y": 27,
+                  "width": 11,
+                  "height": 10,
+                  "answers": ["lesser wing"]
+                }
+              ]
+            },
+            {
+              "question": "Click the Greater Wing.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/SphenoidBone1.png",
+              "hotspots": [
+                {
+                  "x": 85,
+                  "y": 37,
+                  "width": 11,
+                  "height": 10,
+                  "answers": ["greater wing"]
+                }
+              ]
+            },
+            {
+              "question": "Click the Superior Orbital Fissure.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/SphenoidBone1.png",
+              "hotspots": [
+                {
+                  "x": 84,
+                  "y": 46,
+                  "width": 11,
+                  "height": 10,
+                  "answers": ["superior orbital fissure"]
+                }
+              ]
+            },
+            {
+              "question": "Click the Pterygoid Processes.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/SphenoidBone1.png",
+              "hotspots": [
+                {
+                  "x": 84,
+                  "y": 73,
+                  "width": 11,
+                  "height": 10,
+                  "answers": ["pterygoid processes"]
+                }
+              ]
+            },
+            {
+              "question": "Click the Body of the bone.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/SphenoidBone1.png",
+              "hotspots": [
+                {
+                  "x": 85,
+                  "y": 58,
+                  "width": 11,
+                  "height": 10,
+                  "answers": ["body"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "group_name": "Sphenoid Bone: Worded Questions",
+          "questions": [
+            {
+              "question": "Transmits the optic nerve (CN II) and the ophthalmic artery.",
+              "answers": ["optic foramen", "optic canal"]
+            },
+            {
+              "question": "Transmits the trigeminal (CN V), abducens (CN VI), trochlear (CN IV), and oculomotor nerve (CN III).",
+              "answers": ["superior orbital fissure"]
+            },
+            {
+              "question": "Transmits branches of the trigeminal (CN V).",
+              "answers": ["inferior orbital fissure"]
+            },
+            {
+              "question": "Click the optic foramen",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/SphenoidBone2.png",
+              "hotspots": [
+                {
+                  "x": 6,
+                  "y": 16,
+                  "width": 21,
+                  "height": 12,
+                  "answers": ["optic foramen"]
+                }
+              ]
+            },
+            {
+              "question": "Click the superior orbital fissure.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/SphenoidBone2.png",
+              "hotspots": [
+                {
+                  "x": 60,
+                  "y": 86,
+                  "width": 21,
+                  "height": 12,
+                  "answers": ["superior orbital fissure"]
+                }
+              ]
+            },
+            {
+              "question": "Click the inferior orbital fissure.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/SphenoidBone2.png",
+              "hotspots": [
+                {
+                  "x": 7,
+                  "y": 85,
+                  "width": 21,
+                  "height": 12,
+                  "answers": ["inferior orbital fissure"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "group_name": "Sphenoid Bone: Foramina",
+          "questions": [
+            {
+              "question": "Transmits the maxillary nerve (branch of CN V, trigeminal).",
+              "answers": ["foramen rotundum"]
+            },
+            {
+              "question": "Transmits the mandibular nerve (branch of CN V, trigeminal).",
+              "answers": ["foramen ovale"]
+            },
+            {
+              "question": "Transmits the anterior branch of the middle meningeal artery.",
+              "answers": ["foramen spinosum"]
+            },
+            {
+              "question": "Transmits a branch of the ascending pharyngeal artery.",
+              "answers": ["foramen lacerum"]
+            },
+            {
+              "question": "Click the greater wing.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/SphenoidBone3.png",
+              "hotspots": [
+                {
+                  "x": 1,
+                  "y": 15,
+                  "width": 42,
+                  "height": 10,
+                  "answers": ["greater wing"]
+                }
+              ]
+            },
+            {
+              "question": "Click the superior orbital fissure.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/SphenoidBone3.png",
+              "hotspots": [
+                {
+                  "x": 4,
+                  "y": 28,
+                  "width": 42,
+                  "height": 10,
+                  "answers": ["superior orbital fissure"]
+                }
+              ]
+            },
+            {
+              "question": "Click the foramen rotundum.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/SphenoidBone3.png",
+              "hotspots": [
+                {
+                  "x": 2,
+                  "y": 42,
+                  "width": 42,
+                  "height": 10,
+                  "answers": ["foramen rotundum"]
+                }
+              ]
+            },
+            {
+              "question": "Click the foramen ovale.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/SphenoidBone3.png",
+              "hotspots": [
+                {
+                  "x": 1,
+                  "y": 53,
+                  "width": 42,
+                  "height": 10,
+                  "answers": ["foramen ovale"]
+                }
+              ]
+            },
+            {
+              "question": "Click the foramen spinosum.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/SphenoidBone3.png",
+              "hotspots": [
+                {
+                  "x": 1,
+                  "y": 66,
+                  "width": 42,
+                  "height": 10,
+                  "answers": ["foramen spinosum"]
+                }
+              ]
+            },
+            {
+              "question": "Click the foramen lacerum.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/SphenoidBone3.png",
+              "hotspots": [
+                {
+                  "x": 1,
+                  "y": 79,
+                  "width": 42,
+                  "height": 10,
+                  "answers": ["foramen lacerum"]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

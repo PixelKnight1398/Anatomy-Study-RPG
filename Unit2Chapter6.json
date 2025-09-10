@@ -1,0 +1,126 @@
+{
+  "unit_id": "2",
+  "unit_name": "Skeletal System",
+  "quests": [
+    {
+      "quest_id": "6",
+      "quest_title": "Hopeless Bones",
+      "quest_description": "Master the types of bones, their structure, and their cell types!",
+      "minion_images": [
+        "Images/Monsters/SkullMinion1.png",
+        "Images/Monsters/SkullMinion2.png",
+        "Images/Monsters/SkullMinion3.png"
+      ],
+      "boss_image": "Images/Monsters/SkullBoss.png",
+      "groups": [
+        {
+          "group_name": "Types of Bones",
+          "questions": [
+            {
+              "question": "Consist of a shaft and a variable number of extremities or epiphyses (ends)\n ex: femur, tibia, fibula, humerus ",
+              "answers": ["long"]
+            },
+            {
+              "question": "Somewhat cubed shaped; nearly equal in length and width \n ex: carpal and tarsal bones",
+              "answers": ["short"]
+            },
+            {
+              "question": "Generally thin and composed of two nearly parallel plates of compact bone tissue \n ex: cranial bones, sternum, ribs",
+              "answers": ["flat"]
+            },
+            {
+              "question": "Have complex shapes and cannot be grouped into any other category \n ex: vertebrae, hip bones, certain facial bones, calcaneus",
+              "answers": ["irregular"]
+            },
+            {
+              "question": "Develop in certain tendons where there is considerable friction, tension, and physical stretch \n ex: patella ",
+              "answers": ["sesamoid"]
+            },
+            {
+              "question": "Small bones located in sutures (joints) between certain cranial bones",
+              "answers": ["sutural"]
+            }
+          ]
+        },
+        {
+          "group_name": "Bone Structure",
+          "questions": [
+            {
+              "question": "Bone shaft/body; makes up the long, cylindrical portion of the bone",
+              "answers": ["diaphysis"]
+            },
+            {
+              "question": "Proximal and distal ends of the bone",
+              "answers": ["epiphysis"]
+            },
+            {
+              "question": "Regions between the diaphysis and epiphyses",
+              "answers": ["metaphysis"]
+            },
+            {
+              "question": "Thin layer of hyaline cartilage covering the part of the bone that forms a joint",
+              "answers": ["articular cartilage"]
+            },
+            {
+              "question": "Tough connective tissue sheath that surrounds the bone surface",
+              "answers": ["periosteum"]
+            },
+            {
+              "question": "Hollow cylindrical space containing fatty yellow bone marrow",
+              "answers": ["medullary cavity"]
+            },
+            {
+              "question": "Thin membrane that lines the medullary cavity",
+              "answers": ["endosteum"]
+            }
+          ]
+        },
+        {
+          "group_name": "Cell Types and Types of Bone Tissue",
+          "questions": [
+            {
+              "question": "Stem cells",
+              "answers": ["osteoprogenitor cells"]
+            },
+            {
+              "question": "Bone-BUILIDNG cells that synthesize collagen",
+              "answers": ["osteoblasts"]
+            },
+            {
+              "question": "Mature bone cells that help maintain bone homeostasis",
+              "answers": ["osteocytes"]
+            },
+            {
+              "question": "Bone-degrading cells that release lysosomal enzymes and acids",
+              "answers": ["osteoclasts"]
+            },
+            {
+              "question": "Found beneath the periosteum of all bone and helps the bone resist the stress produced by weight and movement",
+              "answers": ["compact bone"]
+            },
+            {
+              "question": "repeating structural units which compact bone is comprised of",
+              "answers": ["osteons"]
+            },
+            {
+              "question": "Located in the interior of the bone and is used for the storage of bone marrow",
+              "answers": ["spongy bone"]
+            },
+            {
+              "question": "structure of spongy bone: consists of lamellae that arranged in irregular pattern of thin columns",
+              "answers": ["trabeculae"]
+            },
+            {
+              "question": "Primary source of new blood cells located between the trabeculae of certain bones",
+              "answers": ["red bone marrow"]
+            },
+            {
+              "question": "Comprised of adipocytes and located in the diaphysis of long bones",
+              "answers": ["yellow bone marrow"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

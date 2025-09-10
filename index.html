@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integumentary RPG</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="game-container">
+        <div id="battle-screen" style="display: none;">
+            <div class="battlefield">
+                <div class="battle-stats enemy-stats">
+                    <img id="enemy-image" src="" alt="Enemy Monster" />
+                    <div class="health-bar-container">
+                        <div id="enemy-health-bar" class="health-bar"></div>
+                    </div>
+                    <span id="enemy-health-text"></span>
+                </div>
+
+                <div class="battle-stats player-stats">
+                    <img id="player-image" src="Images/PlayerImage.png" alt="Player Character" />
+                    <div class="health-bar-container">
+                        <div id="player-health-bar" class="health-bar"></div>
+                    </div>
+                    <span id="player-health-text"></span>
+                </div>
+            </div>
+            
+            <div id="battle-log"></div>
+        </div>
+
+        <div class="input-form">
+            </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>

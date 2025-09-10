@@ -1,0 +1,143 @@
+{
+  "unit_id": "2",
+  "unit_name": "The Integumentary System",
+  "quests": [
+    {
+      "quest_id": "5",
+      "quest_title": "Integumentary Trouble",
+      "quest_description": "Defeat the minions and the final boss by mastering all the dermal cell types!",
+      "minion_images": [
+        "Images/Monsters/CellMonster1.png",
+        "Images/Monsters/FollicleMonster.png",
+        "Images/Monsters/GlandMonster.png"
+      ],
+      "boss_image": "Images/Monsters/EpidermisMonster.png",
+      "groups": [
+        {
+          "group_name": "Epidermal Cell Types",
+          "questions": [
+            {
+              "question": "The most superficial layer of the skin",
+              "answers": ["epidermis"]
+            },
+            {
+              "question": "Produce a protein called keratin, a tough, fibrous protein that helps protect the skin and underlying tissue from abrasion, heat, microbes, and chemicals",
+              "answers": ["keratinocytes"]
+            },
+            {
+              "question": "Produce the pigment melanin, which contributes to skin color and absorbs damaging UV light",
+              "answers": ["melanocytes"]
+            },
+            {
+              "question": "Participate in immune response against microbes that invade the skin",
+              "answers": ["intraepidermal macrophages"]
+            },
+            {
+              "question": "Located in the deepest layer of the epidermis where they contact the flattened process of a sensory neuron",
+              "answers": ["tactile epithelial cells"]
+            }
+          ]
+        },
+        {
+          "group_name": "Cell Layers",
+          "questions": [
+            {
+              "question": "Consists of 25-30 layers of dead keratinocytes",
+              "answers": ["stratum corneum"]
+            },
+            {
+              "question": "Consists of 4-6 layers of dead keratinocytes",
+              "answers": ["stratum lucidum"]
+            },
+            {
+              "question": "Consists of 3-5 layers of flattened keratinocytes undergoing apoptosis",
+              "answers": ["stratum granulosum"]
+            },
+            {
+              "question": "Thick layer of living keratinocytes, intraepidermal macrophages, and projections from melanocytes",
+              "answers": ["stratum spinosum"]
+            },
+            {
+              "question": "Consist of single row of cuboidal or columnar keratinocytes that serve as stem cells",
+              "answers": ["stratum basale"]
+            },
+            {
+              "question": "Process by which epithelial cells become filled with keratin protein filaments, die, and form tough, resistant structures",
+              "answers": ["keratinization"]
+            },
+            {
+              "question": "Lies deep to the epidermis and is much thicker",
+              "answers": ["dermis"]
+            },
+            {
+              "question": "Region of the dermis made of areolar connective tissue with dermal papillae that create epidermal ridges",
+              "answers": ["papillary region"]
+            },
+            {
+              "question": "Region of the dermis made of dense irregular connective tissue; contains hair follicles, nerves, sebaceous glands, and sudoriferous glands",
+              "answers": ["reticular region"]
+            }
+          ]
+        },
+        {
+          "group_name": "Dermal Cell Types",
+          "questions": [
+            {
+              "question": "Detects pain, itch, tickle, temperature",
+              "answers": ["free nerve endings"]
+            },
+            {
+              "question": "Detects touch and pressure at skin surface",
+              "answers": ["tactile discs"]
+            },
+            {
+              "question": "Detects onset of touch and low frequency vibrations",
+              "answers": ["Meissner corpuscles"]
+            },
+            {
+              "question": "Detects stretch and pressure",
+              "answers": ["Ruffini corpuscles"]
+            },
+            {
+              "question": "Detects movements on skin surface that disturb hairs",
+              "answers": ["hair root plexus"]
+            },
+            {
+              "question": "Detects high-frequency vibration",
+              "answers": ["Pacinian corpuscles"]
+            }
+          ]
+        },
+        {
+          "group_name": "Accessory Structures",
+          "questions": [
+            {
+              "question": "Glands that secrete a substance called sebum into hair follicles",
+              "answers": ["sebaceous glands"]
+            },
+            {
+              "question": "Glands that secrete sweat into hair follicles or onto skin surface",
+              "answers": ["sudoriferous glands"]
+            },
+            {
+              "question": "Secretion method where all cells of the secretory portion of the gland collect products and then rupture",
+              "answers": ["holocrine"]
+            },
+            {
+              "question": "Secretion method where glands secrete continuously",
+              "answers": ["merocrine"]
+            },
+            {
+              "question": "Glands that secrete sweat directly onto skin surface and are found all throughout the skin",
+              "answers": ["eccrine"]
+            },
+            {
+              "question": "Glands that often secrete sweat into hair follicles and are found in sweaty parts of the skin",
+              "answers": ["apocrine"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

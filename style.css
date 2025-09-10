@@ -1,0 +1,278 @@
+/* --- Global & Responsive Layout --- */
+/* Import a handwritten font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: url("Images/notebookLine.png");
+    background-repeat: repeat-y;
+    background-size: 100% 25px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Gochi Hand', cursive;
+    color: #333;
+}
+
+.game-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column; /* Default to portrait mode (stacking) */
+}
+
+/* --- UI Panel Styles --- */
+.input-form {
+    padding: 20px;
+    background-color: transparent;
+    border-top: 2px solid #ccc;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.input-form h2 {
+    text-align: center;
+}
+
+/* Style the text inputs to look hand-drawn */
+input[type="text"] {
+    border: none;
+    border-bottom: 2px solid #000;
+    background: transparent;
+    padding: 8px 0;
+    font-size: 1.25rem;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.2s;
+    font-family: 'Gochi Hand', cursive;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-bottom-color: #385dbb; /* Change color on focus */
+}
+
+
+.input-form button {
+    margin: 5px;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    position: relative;
+    box-shadow: 
+        0 0 0 2px #000,
+        2px 2px 0 2px #000,
+        -2px -2px 0 2px #000;
+    border-radius: 5px;
+    transition: transform 0.1s ease-in-out;
+}
+
+.input-form button:hover {
+    transform: translateY(2px) translateX(2px);
+    box-shadow: 
+        0 0 0 2px #000,
+        0 0 0 2px #000;
+}
+
+.input-form button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: 
+        0 0 0 2px #000;
+}
+
+#quest-list {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    justify-content: space-between; /* Distributes items evenly */
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+/* New CSS to make quest panels look like paper */
+.quest-panel {
+    border: 2px solid #000;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    box-shadow: 5px 5px 0 #333; /* Gives a slight 3D paper effect */
+    flex: 1 1 calc(50% - 10px); /* 2 items per row, 10px gap */
+    box-sizing: border-box;
+    min-width: 150px;
+}
+
+.quest-panel h3 {
+    margin-top: 0;
+}
+
+/* --- Battle Screen Styles --- */
+
+#battle-screen {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.battlefield {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-grow: 1;
+    align-items: flex-start; /* Aligns items to the top */
+    padding-top: 10vh; /* Adjust as needed */
+    padding-bottom: 10vh;
+}
+
+.battle-stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: transform 0.3s ease-in-out; /* Add transition for animation */
+}
+
+.player-stats {
+    align-self: flex-end; /* Pushes player to the bottom right */
+    padding-bottom: 70px; /* lifts the player card above the log box */
+}
+
+.enemy-stats {
+    align-self: flex-start; /* Keeps enemy at the top left */
+}
+
+.battle-stats img {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #000;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.health-bar-container {
+    width: 180px;
+    height: 20px;
+    background-color: #ddd;
+    border: 1px solid #000;
+}
+
+.health-bar {
+    height: 100%;
+    background-color: #5cb85c;
+    width: 100%;
+    transition: width 0.5s ease-in-out;
+}
+
+#player-health-text, #enemy-health-text {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+#battle-log {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid #000;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    height: 60px;
+    overflow-y: auto;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+}
+
+/* --- Answer Feedback & Animations --- */
+.answer-feedback {
+    font-size: 4rem;
+    font-weight: bold;
+    color: green;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    animation: fade-out 1.5s forwards;
+    z-index: 10;
+}
+
+.answer-feedback.incorrect {
+    color: red;
+}
+
+/* Attacking animations */
+.player-stats.animate-attack {
+    transform: translate(-20px, -20px);
+}
+
+.enemy-stats.animate-attack {
+    transform: translate(20px, 20px);
+}
+
+/* Success/Failure animations */
+.flash {
+    animation: flash 0.5s ease-in-out 3;
+}
+
+.jitter {
+    animation: jitter 0.2s ease-in-out 3;
+}
+
+@keyframes flash {
+    0%, 100% { filter: brightness(100%); }
+    50% { filter: brightness(200%); }
+}
+
+@keyframes jitter {
+    0%, 100% { transform: translate(0, 0); }
+    25% { transform: translate(-3px, 0); }
+    75% { transform: translate(3px, 0); }
+}
+
+@keyframes fade-out {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+/* --- Responsive Landscape Mode --- */
+@media (orientation: landscape) {
+    .game-container {
+        flex-direction: row;
+    }
+
+    #battle-screen {
+        width: 50%;
+        height: 100%;
+    }
+
+    .input-form {
+        width: 50%;
+        height: 100%;
+        border-top: none;
+        border-left: 2px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    /* Adjust quest panels for landscape mode */
+    #quest-list {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .quest-panel {
+        flex: 1 1 calc(33.333% - 10px); /* 3 items per row, 10px gap */
+    }
+}

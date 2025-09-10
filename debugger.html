@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotspot Debugger</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        #debug-image {
+            max-width: 90%;
+            height: auto;
+            border: 2px solid #ccc;
+            cursor: crosshair;
+        }
+        .instructions {
+            background-color: #f0f0f0;
+            border-left: 5px solid #333;
+            padding: 10px;
+            margin: 20px auto;
+            max-width: 800px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Image Hotspot Debugger</h2>
+    <div class="instructions">
+        <h3>How to use:</h3>
+        <ol>
+            <li>Replace the `src` attribute of the image below with your diagram's file path.</li>
+            <li>Open your browser's console (F12 on Windows, Cmd+Option+I on Mac).</li>
+            <li>Click anywhere on the image to see the coordinates logged in the console as a percentage.</li>
+        </ol>
+    </div>
+
+    <img id="debug-image" src="Images/Diagrams/SphenoidBone3.png" alt="Diagram for Hotspot Debugging">
+
+    <script>
+        // Copy-pasted from your game.js file
+        function normalizeAnswer(answer) {
+            return answer.trim().toLowerCase();
+        }
+
+        function debugHotspots(imageElement) {
+            imageElement.addEventListener('click', (event) => {
+                const rect = imageElement.getBoundingClientRect();
+                const x = event.clientX - rect.left;
+                const y = event.clientY - rect.top;
+                const xPercent = (x / rect.width) * 100;
+                const yPercent = (y / rect.height) * 100;
+                console.log(`Clicked at X: ${x.toFixed(2)}, Y: ${y.toFixed(2)} (Percent: X: ${xPercent.toFixed(2)}%, Y: ${yPercent.toFixed(2)}%)`);
+            });
+        }
+
+        // Run the debugger on the image when the page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            const imageToDebug = document.getElementById('debug-image');
+            debugHotspots(imageToDebug);
+        });
+    </script>
+
+</body>
+</html>
