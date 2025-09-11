@@ -26,7 +26,9 @@
                   "y": 10,
                   "width": 26,
                   "height": 14,
-                  "answers": ["frontal"]
+                  "answers": [
+                    "frontal"
+                  ]
                 }
               ]
             },
@@ -40,7 +42,9 @@
                   "y": 4,
                   "width": 26,
                   "height": 14,
-                  "answers": ["parietal"]
+                  "answers": [
+                    "parietal"
+                  ]
                 }
               ]
             },
@@ -54,7 +58,9 @@
                   "y": 72,
                   "width": 26,
                   "height": 14,
-                  "answers": ["occipital"]
+                  "answers": [
+                    "occipital"
+                  ]
                 }
               ]
             },
@@ -68,7 +74,9 @@
                   "y": 42,
                   "width": 26,
                   "height": 14,
-                  "answers": ["temporal"]
+                  "answers": [
+                    "temporal"
+                  ]
                 }
               ]
             },
@@ -82,7 +90,9 @@
                   "y": 31,
                   "width": 26,
                   "height": 14,
-                  "answers": ["sphenoid"]
+                  "answers": [
+                    "sphenoid"
+                  ]
                 }
               ]
             },
@@ -96,7 +106,9 @@
                   "y": 50,
                   "width": 26,
                   "height": 14,
-                  "answers": ["ethmoid"]
+                  "answers": [
+                    "ethmoid"
+                  ]
                 }
               ]
             }
@@ -115,7 +127,9 @@
                   "y": 40,
                   "width": 11,
                   "height": 10,
-                  "answers": ["optic foramen"]
+                  "answers": [
+                    "optic foramen"
+                  ]
                 }
               ]
             },
@@ -129,7 +143,9 @@
                   "y": 52,
                   "width": 11,
                   "height": 10,
-                  "answers": ["sphenoidal sinus in body", "sphenoidal sinus"]
+                  "answers": [
+                    "sphenoidal sinus"
+                  ]
                 }
               ]
             },
@@ -143,7 +159,9 @@
                   "y": 63,
                   "width": 11,
                   "height": 10,
-                  "answers": ["foramen rotundum"]
+                  "answers": [
+                    "foramen rotundum"
+                  ]
                 }
               ]
             },
@@ -157,7 +175,9 @@
                   "y": 27,
                   "width": 11,
                   "height": 10,
-                  "answers": ["lesser wing"]
+                  "answers": [
+                    "lesser wing"
+                  ]
                 }
               ]
             },
@@ -171,7 +191,9 @@
                   "y": 37,
                   "width": 11,
                   "height": 10,
-                  "answers": ["greater wing"]
+                  "answers": [
+                    "greater wing"
+                  ]
                 }
               ]
             },
@@ -185,7 +207,9 @@
                   "y": 46,
                   "width": 11,
                   "height": 10,
-                  "answers": ["superior orbital fissure"]
+                  "answers": [
+                    "superior orbital fissure"
+                  ]
                 }
               ]
             },
@@ -199,7 +223,9 @@
                   "y": 73,
                   "width": 11,
                   "height": 10,
-                  "answers": ["pterygoid processes"]
+                  "answers": [
+                    "pterygoid processes"
+                  ]
                 }
               ]
             },
@@ -213,7 +239,9 @@
                   "y": 58,
                   "width": 11,
                   "height": 10,
-                  "answers": ["body"]
+                  "answers": [
+                    "body"
+                  ]
                 }
               ]
             }
@@ -224,15 +252,21 @@
           "questions": [
             {
               "question": "Transmits the optic nerve (CN II) and the ophthalmic artery.",
-              "answers": ["optic foramen", "optic canal"]
+              "answers": [
+                "optic foramen"
+              ]
             },
             {
               "question": "Transmits the trigeminal (CN V), abducens (CN VI), trochlear (CN IV), and oculomotor nerve (CN III).",
-              "answers": ["superior orbital fissure"]
+              "answers": [
+                "superior orbital fissure"
+              ]
             },
             {
               "question": "Transmits branches of the trigeminal (CN V).",
-              "answers": ["inferior orbital fissure"]
+              "answers": [
+                "inferior orbital fissure"
+              ]
             },
             {
               "question": "Click the optic foramen",
@@ -244,7 +278,9 @@
                   "y": 16,
                   "width": 21,
                   "height": 12,
-                  "answers": ["optic foramen"]
+                  "answers": [
+                    "optic foramen"
+                  ]
                 }
               ]
             },
@@ -258,7 +294,9 @@
                   "y": 86,
                   "width": 21,
                   "height": 12,
-                  "answers": ["superior orbital fissure"]
+                  "answers": [
+                    "superior orbital fissure"
+                  ]
                 }
               ]
             },
@@ -272,7 +310,9 @@
                   "y": 85,
                   "width": 21,
                   "height": 12,
-                  "answers": ["inferior orbital fissure"]
+                  "answers": [
+                    "inferior orbital fissure"
+                  ]
                 }
               ]
             }
@@ -283,19 +323,27 @@
           "questions": [
             {
               "question": "Transmits the maxillary nerve (branch of CN V, trigeminal).",
-              "answers": ["foramen rotundum"]
+              "answers": [
+                "foramen rotundum"
+              ]
             },
             {
               "question": "Transmits the mandibular nerve (branch of CN V, trigeminal).",
-              "answers": ["foramen ovale"]
+              "answers": [
+                "foramen ovale"
+              ]
             },
             {
               "question": "Transmits the anterior branch of the middle meningeal artery.",
-              "answers": ["foramen spinosum"]
+              "answers": [
+                "foramen spinosum"
+              ]
             },
             {
               "question": "Transmits a branch of the ascending pharyngeal artery.",
-              "answers": ["foramen lacerum"]
+              "answers": [
+                "foramen lacerum"
+              ]
             },
             {
               "question": "Click the greater wing.",
@@ -307,7 +355,9 @@
                   "y": 15,
                   "width": 42,
                   "height": 10,
-                  "answers": ["greater wing"]
+                  "answers": [
+                    "greater wing"
+                  ]
                 }
               ]
             },
@@ -321,7 +371,9 @@
                   "y": 28,
                   "width": 42,
                   "height": 10,
-                  "answers": ["superior orbital fissure"]
+                  "answers": [
+                    "superior orbital fissure"
+                  ]
                 }
               ]
             },
@@ -335,7 +387,9 @@
                   "y": 42,
                   "width": 42,
                   "height": 10,
-                  "answers": ["foramen rotundum"]
+                  "answers": [
+                    "foramen rotundum"
+                  ]
                 }
               ]
             },
@@ -349,7 +403,9 @@
                   "y": 53,
                   "width": 42,
                   "height": 10,
-                  "answers": ["foramen ovale"]
+                  "answers": [
+                    "foramen ovale"
+                  ]
                 }
               ]
             },
@@ -363,7 +419,9 @@
                   "y": 66,
                   "width": 42,
                   "height": 10,
-                  "answers": ["foramen spinosum"]
+                  "answers": [
+                    "foramen spinosum"
+                  ]
                 }
               ]
             },
@@ -377,7 +435,622 @@
                   "y": 79,
                   "width": 42,
                   "height": 10,
-                  "answers": ["foramen lacerum"]
+                  "answers": [
+                    "foramen lacerum"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "group_name": "Cranial Anatomy: Sutures and Fontanels",
+          "questions": [
+            {
+              "question": "immovable joints (in adults) that hold most of the skull bones together",
+              "answers": [
+                "cranial sutures"
+              ]
+            },
+            {
+              "question": "areas where unossified mesenchyme develop into dense connective tissue of the skull",
+              "answers": [
+                "fontanels"
+              ]
+            },
+            {
+              "question": "Click the Sagittal Suture.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/CranialBones2.png",
+              "hotspots": [
+                {
+                  "x": 15,
+                  "y": 2,
+                  "width": 25,
+                  "height": 6,
+                  "answers": [
+                    "sagittal suture"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the Coronal Suture.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/CranialBones2.png",
+              "hotspots": [
+                {
+                  "x": 73,
+                  "y": 4,
+                  "width": 25,
+                  "height": 6,
+                  "answers": [
+                    "coronal suture"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the Lambdoid Suture.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/CranialBones2.png",
+              "hotspots": [
+                {
+                  "x": 1,
+                  "y": 80,
+                  "width": 25,
+                  "height": 6,
+                  "answers": [
+                    "lambdoid suture"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the Squamous Suture.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/CranialBones2.png",
+              "hotspots": [
+                {
+                  "x": 30,
+                  "y": 88,
+                  "width": 25,
+                  "height": 6,
+                  "answers": [
+                    "squamous suture"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "group_name": "Facial Bones",
+          "questions": [
+            {
+              "question": "Bones that form the upper jaw",
+              "answers": [
+                "maxillae"
+              ]
+            },
+            {
+              "question": "Bones that form the lower jaw",
+              "answers": [
+                "mandible"
+              ]
+            },
+            {
+              "question": "Bones that increase the surface area of the nasal cavity and help swirl and filter air before it passes into the lungs",
+              "answers": [
+                "inferior nasal concha"
+              ]
+            },
+            {
+              "question": "Bones that form the bridge of the nose",
+              "answers": [
+                "nasal bones"
+              ]
+            },
+            {
+              "question": "Bones that forms part of the nasal septum",
+              "answers": [
+                "vomer"
+              ]
+            },
+            {
+              "question": "Bones that houses the lacrimal sac, which forms tears",
+              "answers": [
+                "lacrimal"
+              ]
+            },
+            {
+              "question": "Bones that form the prominence of the cheek",
+              "answers": [
+                "zygomatic"
+              ]
+            },
+            {
+              "question": "Bones that form the posterior portion of the hard palate, part of the nasal cavity, and a small portion of the orbits",
+              "answers": [
+                "palatine"
+              ]
+            }
+          ]
+        },
+        {
+          "group_name": "Facial Bones: Diagram Locations",
+          "questions": [
+            {
+              "question": "Click the maxillae.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/FacialBones1.png",
+              "hotspots": [
+                {
+                  "x": 10,
+                  "y": 24,
+                  "radius": 10,
+                  "answers": [
+                    "maxillae"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the mandible.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/FacialBones1.png",
+              "hotspots": [
+                {
+                  "x": 34,
+                  "y": 32,
+                  "radius": 10,
+                  "answers": [
+                    "mandible"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the inferior nasal concha.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/FacialBones1.png",
+              "hotspots": [
+                {
+                  "x": 65,
+                  "y": 22,
+                  "radius": 10,
+                  "answers": [
+                    "inferior nasal concha"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the nasal bone.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/FacialBones1.png",
+              "hotspots": [
+                {
+                  "x": 88,
+                  "y": 24,
+                  "radius": 10,
+                  "answers": [
+                    "nasal bone"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the vomer.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/FacialBones1.png",
+              "hotspots": [
+                {
+                  "x": 6,
+                  "y": 78,
+                  "radius": 10,
+                  "answers": [
+                    "vomer"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the lacrimal bone.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/FacialBones1.png",
+              "hotspots": [
+                {
+                  "x": 35,
+                  "y": 70,
+                  "radius": 10,
+                  "answers": [
+                    "lacrimal bone"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the zygomatic bone.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/FacialBones1.png",
+              "hotspots": [
+                {
+                  "x": 63,
+                  "y": 73,
+                  "radius": 10,
+                  "answers": [
+                    "zygomatic bone"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the palatine bone.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/FacialBones1.png",
+              "hotspots": [
+                {
+                  "x": 88,
+                  "y": 65,
+                  "radius": 10,
+                  "answers": [
+                    "palatine bone"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "group_name": "Paranasal Sinuses and Hyoid Bone",
+          "questions": [
+            {
+              "question": "cavities within certain bones near the nasal cavity",
+              "answers": [
+                "paranasal sinuses"
+              ]
+            },
+            {
+              "question": "supports the tongue and doesn’t articulate with any other bone",
+              "answers": [
+                "hyoid bone"
+              ]
+            },
+            {
+              "question": "Click the maxillae.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/PalateSeptum1.png",
+              "hotspots": [
+                {
+                  "x": 47,
+                  "y": 11,
+                  "width": 30,
+                  "height": 8,
+                  "answers": [
+                    "maxillae"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the palatine bone.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/PalateSeptum1.png",
+              "hotspots": [
+                {
+                  "x": 60,
+                  "y": 29,
+                  "width": 30,
+                  "height": 8,
+                  "answers": [
+                    "palatine"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the ethmoid bone.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/PalateSeptum1.png",
+              "hotspots": [
+                {
+                  "x": 6,
+                  "y": 69,
+                  "width": 30,
+                  "height": 8,
+                  "answers": [
+                    "ethmoid"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the vomer.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/PalateSeptum1.png",
+              "hotspots": [
+                {
+                  "x": 4,
+                  "y": 78,
+                  "width": 30,
+                  "height": 8,
+                  "answers": [
+                    "vomer"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the septal cartilage.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/PalateSeptum1.png",
+              "hotspots": [
+                {
+                  "x": 73,
+                  "y": 60,
+                  "width": 24,
+                  "height": 14,
+                  "answers": [
+                    "septal cartilage"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the Frontal Sinus.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/SinusBone1.png",
+              "hotspots": [
+                {
+                  "x": 46,
+                  "y": 1,
+                  "width": 43,
+                  "height": 15,
+                  "answers": [
+                    "frontal sinus"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the Ethmoidal Sinus.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/SinusBone1.png",
+              "hotspots": [
+                {
+                  "x": 45,
+                  "y": 19,
+                  "width": 51,
+                  "height": 14,
+                  "answers": [
+                    "ethmoidal sinus"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the Sphenoidal sinus.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/SinusBone1.png",
+              "hotspots": [
+                {
+                  "x": 44,
+                  "y": 65,
+                  "width": 53,
+                  "height": 14,
+                  "answers": [
+                    "sphenoidal sinus"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the maxillary sinus.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/SinusBone1.png",
+              "hotspots": [
+                {
+                  "x": 50,
+                  "y": 81,
+                  "width": 47,
+                  "height": 14,
+                  "answers": [
+                    "maxillary sinus"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "group_name": "Vertebral Column and Thoracic Cage",
+          "questions": [
+            {
+              "question": "contains a series of bones called vertebrae organized into 5 regions",
+              "answers": [
+                "vertebral column"
+              ]
+            },
+            {
+              "question": "bony enclosure formed by the [1] sternum, [2] ribs and their [3] costal cartilages, and the bodies of the thoracic vertebrae",
+              "answers": [
+                "thoracic cage"
+              ]
+            },
+            {
+              "question": "Click the Spinal cord.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Vertebrae1.png",
+              "hotspots": [
+                {
+                  "x": 4,
+                  "y": 5,
+                  "width": 31,
+                  "height": 14,
+                  "answers": [
+                    "spinal cord"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the facet.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Vertebrae1.png",
+              "hotspots": [
+                {
+                  "x": 13,
+                  "y": 26,
+                  "width": 17,
+                  "height": 14,
+                  "answers": [
+                    "facet"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the vertebral foramen.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Vertebrae1.png",
+              "hotspots": [
+                {
+                  "x": 1,
+                  "y": 52,
+                  "width": 21,
+                  "height": 22,
+                  "answers": [
+                    "vertebral foramen"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the vertebral body.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Vertebrae1.png",
+              "hotspots": [
+                {
+                  "x": 52,
+                  "y": 70,
+                  "width": 31,
+                  "height": 13,
+                  "answers": [
+                    "vertebral body"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the spinous process.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Vertebrae1.png",
+              "hotspots": [
+                {
+                  "x": 48,
+                  "y": 3,
+                  "width": 34,
+                  "height": 13,
+                  "answers": [
+                    "spinous process"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the transverse process.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Vertebrae1.png",
+              "hotspots": [
+                {
+                  "x": 62,
+                  "y": 23,
+                  "width": 36,
+                  "height": 13,
+                  "answers": [
+                    "transverse process"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the Cervical vertebrae.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Spine1.png",
+              "hotspots": [
+                {
+                  "x": 33,
+                  "y": 6,
+                  "width": 24,
+                  "height": 8,
+                  "answers": [
+                    "cervical vertebrae"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the thoracic vertebrae.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Spine1.png",
+              "hotspots": [
+                {
+                  "x": 33,
+                  "y": 34,
+                  "width": 24,
+                  "height": 8,
+                  "answers": [
+                    "thoracic vertebrae"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the lumbar vertebrae.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Spine1.png",
+              "hotspots": [
+                {
+                  "x": 33,
+                  "y": 64,
+                  "width": 24,
+                  "height": 8,
+                  "answers": [
+                    "lumbar vertebrae"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the sacrum.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Spine1.png",
+              "hotspots": [
+                {
+                  "x": 33,
+                  "y": 86,
+                  "width": 24,
+                  "height": 5,
+                  "answers": [
+                    "sacrum"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the coccyx.",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Spine1.png",
+              "hotspots": [
+                {
+                  "x": 33,
+                  "y": 92,
+                  "width": 24,
+                  "height": 5,
+                  "answers": [
+                    "coccyx"
+                  ]
                 }
               ]
             }

@@ -34,6 +34,7 @@ const enemyHealthText = document.getElementById('enemy-health-text');
 const playerImage = document.getElementById('player-image');
 const enemyImage = document.getElementById('enemy-image');
 const battleLog = document.getElementById('battle-log');
+const gameContainer = document.querySelector('.game-container');
 
 // --- Main Functions ---
 
@@ -58,6 +59,9 @@ function renderScreen(screenName) {
     uiPanel.innerHTML = '';
     battleScreen.style.display = 'none';
 
+    // Toggle a class on the game container to handle full-width layout for the village
+    gameContainer.classList.toggle('village-layout', screenName === 'village');
+
     switch (screenName) {
         case 'village':
             renderVillage();
@@ -73,18 +77,34 @@ function renderScreen(screenName) {
 
 function renderVillage() {
     const villageImageName = 'Village';
+    const { level, exp, gold, health, armor, weapon } = GameState.playerCharacter;
 
     uiPanel.innerHTML = `
-        <h2>Village</h2>
-        <p>Welcome to the village. Where would you like to go?</p>
-        <button id="notice-board-btn">Notice Board</button>
-        <img src="Images/${villageImageName}.png" width="400" height="400"/>
+        <div class="player-stats-bar">
+            <p><strong>Level:</strong> ${level}</p>
+            <p><strong>Exp:</strong> ${exp}</p>
+            <p><strong>Gold:</strong> ${gold}</p>
+            <p><strong>Health:</strong> ${health}/100</p>
+        </div>
+        
+        <div class="village-nav">
+            <h2>The Village</h2>
+            <p>Welcome, adventurer. What is your next move?</p>
+            <button id="notice-board-btn">Notice Board</button>
+            <button id="tavern-btn">Tavern</button>
+            <button id="blacksmith-btn">Blacksmith</button>
+            <button id="doctor-btn">Doctor</button>
+        </div>
+
+        <div class="village-image-container">
+            <img src="Images/${villageImageName}.png" alt="A simple drawing of a medieval village" width="300" height="300"/>
+        </div>
     `;
     
     document.getElementById('notice-board-btn').addEventListener('click', () => renderScreen('notice-board'));
-    //document.getElementById('tavern-btn').addEventListener('click', () => console.log('Navigated to Tavern'));
-    //document.getElementById('blacksmith-btn').addEventListener('click', () => console.log('Navigated to Blacksmith'));
-    //document.getElementById('doctor-btn').addEventListener('click', () => console.log('Navigated to Doctor'));
+    document.getElementById('tavern-btn').addEventListener('click', () => console.log('Navigated to Tavern'));
+    document.getElementById('blacksmith-btn').addEventListener('click', () => console.log('Navigated to Blacksmith'));
+    document.getElementById('doctor-btn').addEventListener('click', () => console.log('Navigated to Doctor'));
 }
 
 // Updated renderNoticeBoard
@@ -202,6 +222,7 @@ function startTurn() {
 
     if (!currentQuestionData) {
         console.log("Error: No question data in startTurn function");
+        GameState.currentQuestionIndex = 0;
         return;
     }
     
@@ -420,9 +441,13 @@ function handleMinionDefeated() {
     battleLog.textContent = "Minion defeated!";
     
     GameState.currentGroupIndex++;
+    GameState.currentQuestionIndex = 0;
     
     if (GameState.currentGroupIndex >= GameState.currentQuest.groups.length && !GameState.isBossBattle) {
-        setTimeout(() => startBossBattle(), 2000);
+        setTimeout(() => {
+            startBossBattle();
+            startTurn();
+        }, 1500);
     } else if (GameState.currentGroupIndex >= GameState.currentQuest.groups.length && GameState.isBossBattle) {
         endBattle('win');
     } else {
