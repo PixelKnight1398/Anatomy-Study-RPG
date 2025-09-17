@@ -230,9 +230,13 @@ function startTurn() {
 
     if (GameState.currentTurn === 'player') {
         battleLog.textContent = "Your turn to attack! Answer the question to deal damage.";
-        renderQuestion(currentQuestionData);
     } else {
         battleLog.textContent = "The minion is attacking! Answer correctly to defend.";
+    }
+
+    if (currentGroup.type === 'matching') {
+        renderMatchingQuestion(currentGroup.questions);
+    } else {
         renderQuestion(currentQuestionData);
     }
 }
@@ -373,6 +377,73 @@ function renderQuestion(questionData) {
         battleLog.textContent = "An error occurred. Missing question data.";
         setTimeout(() => endBattle('error'), 3000);
     }
+}
+
+function renderMatchingQuestion(questions) {
+    uiPanel.style.display = 'block';
+    uiPanel.innerHTML = `
+        <div class="battle-ui-panel">
+            <h3>Matching Game</h3>
+            <p>Match the term on the left with its definition on the right.</p>
+            <div id="matching-container"></div>
+            <button id="submit-matching-btn" style="margin-top: 20px;">Submit Answers</button>
+        </div>
+    `;
+
+    const matchingContainer = document.getElementById('matching-container');
+    matchingContainer.style.display = 'grid';
+    matchingContainer.style.gridTemplateColumns = '1fr 1fr';
+    matchingContainer.style.gap = '20px';
+
+    const shuffledQuestions = shuffleArray([...questions]);
+    const shuffledAnswers = shuffleArray([...questions.map(q => q.answers[0])]);
+    
+    shuffledAnswers.forEach((answer, index) => {
+        // Create left column (answers)
+        const answerP = document.createElement('p');
+        answerP.textContent = answer;
+        answerP.dataset.answer = normalizeAnswer(answer);
+        
+        // Create right column (dropdowns)
+        const select = document.createElement('select');
+        select.id = `select-${index}`;
+        const defaultOption = document.createElement('option');
+        defaultOption.textContent = "Select a definition...";
+        defaultOption.value = "";
+        select.appendChild(defaultOption);
+
+        shuffledQuestions.forEach(q => {
+            const option = document.createElement('option');
+            option.value = normalizeAnswer(q.question);
+            option.textContent = q.question;
+            select.appendChild(option);
+        });
+
+        // Append both elements to the grid container
+        matchingContainer.appendChild(answerP);
+        matchingContainer.appendChild(select);
+    });
+
+    document.getElementById('submit-matching-btn').addEventListener('click', () => {
+        let isCorrect = true;
+        
+        document.querySelectorAll('#matching-container p').forEach((answerP, index) => {
+            const select = document.getElementById(`select-${index}`);
+            const selectedQuestion = select.options[select.selectedIndex].textContent;
+            
+            const originalQuestion = questions.find(q => q.answers.includes(answerP.textContent));
+            
+            if (originalQuestion && normalizeAnswer(selectedQuestion) !== normalizeAnswer(originalQuestion.question)) {
+                isCorrect = false;
+                // Optional: provide visual feedback for incorrect matches
+                select.style.border = '2px solid red';
+            } else {
+                select.style.border = '2px solid green';
+            }
+        });
+        
+        handleAnswer(isCorrect ? 'correct' : 'incorrect', ['correct']);
+    });
 }
 
 function handleAnswer(userAnswer, correctAnswers) {
