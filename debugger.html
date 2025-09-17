@@ -9,6 +9,9 @@
             font-family: sans-serif;
             text-align: center;
             margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         #debug-image {
             max-width: 90%;
@@ -24,6 +27,40 @@
             max-width: 800px;
             text-align: left;
         }
+        #hotspot-form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-top: 20px;
+            width: 90%;
+            max-width: 600px;
+            text-align: left;
+        }
+        #hotspot-form label, #hotspot-form input, #hotspot-form textarea, #hotspot-form select {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        #hotspot-form input[type="text"], #hotspot-form textarea, #hotspot-form select {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        #output-container {
+            margin-top: 20px;
+            width: 90%;
+            max-width: 600px;
+        }
+        #hotspot-output {
+            width: 100%;
+            height: 400px;
+            resize: vertical;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #e9e9e9;
+        }
     </style>
 </head>
 <body>
@@ -32,36 +69,122 @@
     <div class="instructions">
         <h3>How to use:</h3>
         <ol>
-            <li>Replace the `src` attribute of the image below with your diagram's file path.</li>
-            <li>Open your browser's console (F12 on Windows, Cmd+Option+I on Mac).</li>
-            <li>Click anywhere on the image to see the coordinates logged in the console as a percentage.</li>
+            <li>Use the file input below to upload your diagram image.</li>
+            <li>Fill out the form fields for the question and answers.</li>
+            <li>Select the desired hotspot shape.</li>
+            <li>**For a box:** Click and drag a rectangle to define the area.</li>
+            <li>**For a circle:** Click and drag horizontally to set the radius.</li>
+            <li>Copy the generated JSON from the box below and paste it into your quest file.</li>
         </ol>
     </div>
+    
+    <input type="file" id="image-upload" accept="image/*">
+    <img id="debug-image" src="" alt="Diagram for Hotspot Debugging" style="display:none;">
 
-    <img id="debug-image" src="Images/Diagrams/EthmoidBone1.png" alt="Diagram for Hotspot Debugging">
+    <div id="hotspot-form">
+        <label for="question-text">Question:</label>
+        <input type="text" id="question-text" placeholder="e.g., Click the Crista galli.">
+
+        <label for="answer-text">Answer(s) (comma-separated):</label>
+        <input type="text" id="answer-text" placeholder="e.g., crista galli, a point of attachment">
+
+        <label for="shape-selector">Hotspot Shape:</label>
+        <select id="shape-selector">
+            <option value="box">Box (Click and Drag)</option>
+            <option value="circle">Circle (Click)</option>
+        </select>
+    </div>
+
+    <div id="output-container">
+        <h3>Generated Hotspot JSON (Copy & Paste):</h3>
+        <textarea id="hotspot-output" rows="10" cols="80"></textarea>
+    </div>
 
     <script>
-        // Copy-pasted from your game.js file
-        function normalizeAnswer(answer) {
-            return answer.trim().toLowerCase();
-        }
+        const imageUpload = document.getElementById('image-upload');
+        const imageToDebug = document.getElementById('debug-image');
+        const hotspotOutput = document.getElementById('hotspot-output');
+        const questionText = document.getElementById('question-text');
+        const answerText = document.getElementById('answer-text');
+        const shapeSelector = document.getElementById('shape-selector');
 
-        function debugHotspots(imageElement) {
-            imageElement.addEventListener('click', (event) => {
-                const rect = imageElement.getBoundingClientRect();
-                const x = event.clientX - rect.left;
-                const y = event.clientY - rect.top;
-                const xPercent = (x / rect.width) * 100;
-                const yPercent = (y / rect.height) * 100;
-                console.log(`Clicked at X: ${x.toFixed(2)}, Y: ${y.toFixed(2)} (Percent: X: ${xPercent.toFixed(2)}%, Y: ${yPercent.toFixed(2)}%)`);
-            });
-        }
+        let isDragging = false;
+        let startX = 0;
+        let startY = 0;
+        let currentImageUrl = '';
 
-        // Run the debugger on the image when the page loads
-        document.addEventListener('DOMContentLoaded', () => {
-            const imageToDebug = document.getElementById('debug-image');
-            debugHotspots(imageToDebug);
+        // Function to update the image when a file is selected
+        imageUpload.addEventListener('change', (event) => {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    imageToDebug.src = e.target.result;
+                    imageToDebug.style.display = 'block';
+                    currentImageUrl = 'Images/Diagrams/' + file.name;
+                    hotspotOutput.value = ''; // Clear previous output for new image
+                };
+                reader.readAsDataURL(file);
+            }
         });
+
+        imageToDebug.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            const rect = imageToDebug.getBoundingClientRect();
+            startX = (e.clientX - rect.left) / rect.width * 100;
+            startY = (e.clientY - rect.top) / rect.height * 100;
+        });
+
+        imageToDebug.addEventListener('mouseup', (e) => {
+            if (!isDragging) return;
+            isDragging = false;
+            
+            const rect = imageToDebug.getBoundingClientRect();
+            const endX = (e.clientX - rect.left) / rect.width * 100;
+            const endY = (e.clientY - rect.top) / rect.height * 100;
+
+            const question = questionText.value || "Click the [part name].";
+            const answers = answerText.value.split(',').map(s => s.trim());
+            
+            let hotspot = {};
+
+            if (shapeSelector.value === 'box') {
+                hotspot = {
+                    x: Math.min(startX, endX).toFixed(2),
+                    y: Math.min(startY, endY).toFixed(2),
+                    width: Math.abs(endX - startX).toFixed(2),
+                    height: Math.abs(endY - startY).toFixed(2),
+                    answers: answers
+                };
+            } else { // Circle
+                // Set the center of the circle to the start position
+                hotspot.x = startX.toFixed(2);
+                hotspot.y = startY.toFixed(2);
+                
+                // Calculate the radius based on horizontal drag
+                hotspot.radius = Math.abs(endX - startX).toFixed(2);
+                hotspot.answers = answers;
+            }
+
+            const questionJSON = {
+                question: question,
+                type: "image-hotspot",
+                image_url: currentImageUrl,
+                hotspots: [hotspot]
+            };
+
+            const newOutput = JSON.stringify(questionJSON, null, 2);
+            let currentOutput = hotspotOutput.value.trim();
+
+            if (currentOutput.length > 0) {
+                hotspotOutput.value = currentOutput + ",\n" + newOutput;
+            } else {
+                hotspotOutput.value = newOutput;
+            }
+        });
+
+        // Prevent dragging from starting text selection
+        imageToDebug.addEventListener('dragstart', (e) => e.preventDefault());
     </script>
 
 </body>
