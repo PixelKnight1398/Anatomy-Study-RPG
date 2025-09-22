@@ -611,7 +611,7 @@ function debugHotspots(imageElement) {
 // --- Initializer ---
 
 document.addEventListener('DOMContentLoaded', async () => {
-    await loadGameData(['Unit2Chapter5.json', 'Unit2Chapter6.json', 'Unit2Chapter7.json']);
+    await loadGameData(['Unit2Chapter5.json', 'Unit2Chapter6.json', 'Unit2Chapter7.json', 'Unit3Chapter9.json']);
     
     if (GameState.data && GameState.data.length > 0) {
         renderScreen(GameState.currentScreen);

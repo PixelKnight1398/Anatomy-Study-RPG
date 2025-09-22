@@ -1,0 +1,895 @@
+{
+  "unit_id": "3",
+  "unit_name": "Joints and Muscles",
+  "quests": [
+    {
+      "quest_id": "9",
+      "quest_title": "Joints",
+      "quest_description": "Understand joints to defeat your opponents!",
+      "minion_images": [
+        "Images/Monsters/SkullMinion1.png",
+        "Images/Monsters/SkullMinion2.png",
+        "Images/Monsters/SkullMinion3.png"
+      ],
+      "boss_image": "Images/Monsters/SkullBoss.png",
+      "groups": [
+        {
+          "group_name": "Joint Nomenclature",
+          "questions": [
+            {
+              "question": "Nomenclature - Joints are named for the bones they articulate</br></br>temporal + mandible (jaw)",
+              "answers": ["temporomandibular"]
+            },
+            {
+              "question": "Nomenclature - Joints are named for the bones they articulate</br></br>scapula (glenoid cavity) + humerus (shoulder)",
+              "answers": ["glenohumeral"]
+            },
+            {
+              "question": "Nomenclature - Joints are named for the bones they articulate</br></br>atlas (C1) + axis (C2)",
+              "answers": ["atlantoaxial"]
+            },
+            {
+              "question": "Nomenclature - Joints are named for the bones they articulate</br></br>sternum + clavicle",
+              "answers": ["sternoclavicular"]
+            },
+            {
+              "question": "Nomenclature - Joints are named for the bones they articulate</br></br>femur + tibia (knee)",
+              "answers": ["tibiofemoral"]
+            }
+          ]
+        },
+        {
+          "group_name": "Joint Classifications",
+          "questions": [
+            {
+              "question": "A joint held together by dense irregular connective tissue w/ collagen",
+              "answers": ["fibrous joint"]
+            },
+            {
+              "question": "A fibrous joint permits little to no movement and has no synovial cavity",
+              "question_type": "true/false",
+              "answers": ["true"]
+            },
+            {
+              "question": "A fibrous joint permits full range of motion",
+              "question_type": "true/false",
+              "answers": ["false"]
+            },
+            {
+              "question": "A fibrous joint includes sutures, syndesmoses, interosseous membranes",
+              "question_type": "true/false",
+              "answers": ["true"]
+            },
+            {
+              "question": "A fibrous joint includes accessory ligaments, articular discs, labrum",
+              "question_type": "true/false",
+              "answers": ["false"]
+            },
+            {
+              "question": "A joint held together by cartilage",
+              "answers": ["cartilaginous joint"]
+            },
+            {
+              "question": "A cartilaginous joint has little to no movement and has no synovial cavity",
+              "question_type": "true/false",
+              "answers": ["true"]
+            },
+            {
+              "question": "A cartilaginous joint has a synovial cavity",
+              "question_type": "true/false",
+              "answers": ["false"]
+            },
+            {
+              "question": "a synchondroses is an immovable joint (synarthrosis)",
+              "question_type": "true/false",
+              "answers": ["true"]
+            },
+            {
+              "question": "A joint united by dense irregular conective tissue",
+              "answers": ["synovial joint"]
+            },
+            {
+              "question": "A synovial joint permits little to no movement and has no synovial cavity",
+              "question_type": "true/false",
+              "answers": ["false"]
+            },
+            {
+              "question": "A synovial joint is freely moveable (diarthroses)",
+              "question_type": "true/false",
+              "answers": ["true"]
+            },
+            {
+              "question": "A synovial joint has an articular capsule and synovial cavity",
+              "question_type": "true/false",
+              "answers": ["true"]
+            },
+            {
+              "question": "Click the articulating bone",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/JointClassifications2.png",
+              "hotspots": [
+                {
+                  "x": "25.06",
+                  "y": "14.57",
+                  "width": "10.39",
+                  "height": "7.49",
+                  "answers": [
+                    "articulating bone"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the articular cartilage",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/JointClassifications2.png",
+              "hotspots": [
+                {
+                  "x": "23.12",
+                  "y": "40.78",
+                  "width": "10.13",
+                  "height": "7.13",
+                  "answers": [
+                    "articular cartilage"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the periosteum",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/JointClassifications2.png",
+              "hotspots": [
+                {
+                  "x": "82.34",
+                  "y": "1.02",
+                  "width": "10.13",
+                  "height": "6.77",
+                  "answers": [
+                    "periosteum"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the fibrous membrane",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/JointClassifications2.png",
+              "hotspots": [
+                {
+                  "x": "84.29",
+                  "y": "13.68",
+                  "width": "10.13",
+                  "height": "7.13",
+                  "answers": [
+                    "fibrous membrane"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the synovial membrane",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/JointClassifications2.png",
+              "hotspots": [
+                {
+                  "x": "84.29",
+                  "y": "25.45",
+                  "width": "10.13",
+                  "height": "6.77",
+                  "answers": [
+                    "synovial membrane"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the synovial cavity",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/JointClassifications2.png",
+              "hotspots": [
+                {
+                  "x": "77.40",
+                  "y": "71.43",
+                  "width": "10.00",
+                  "height": "7.13",
+                  "answers": [
+                    "synovial cavity"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "group_name": "Joint Classifications Two",
+          "questions": [
+            {
+              "question": "a fibrous joint composed of a thin layer of dense irregular connective tissue",
+              "answers": ["suture"]
+            },
+            {
+              "question": "a fibrous joint which connects 2 bones with ligaments and a strong membrane",
+              "answers": ["syndesmoses"]
+            },
+            {
+              "question": "a substantial sheet of dense irregular connective tissues",
+              "answers": ["interosseous membrane"]
+            },
+            {
+              "question": "an immovable joint (ex. cranial sutures)",
+              "answers": ["synathrosis"]
+            },
+            {
+              "question": "a slightly moveable joint (ex. cartilaginous joints between the vertebrae)",
+              "answers": ["amphiarthrosis"]
+            },
+            {
+              "question": "freely moveable joint (ex. glenohumeral/shoulder joint) (all are synovial joints)",
+              "answers": ["diarthrosis"]
+            },
+            {
+              "question": "a type of cartilaginous joint where ends of the articulating bones are covered with hyaline cartilage but a broad, flat disc of fibrocartilage connects the bones  (ex. pubic symphysis",
+              "answers": ["symphyses"]
+            },
+            {
+              "question": "A type of cartilaginous joint where two bones are joined together by hyaline cartilage (ex. epiphyseal growth plate)",
+              "answers": ["synchondroses"]
+            },
+            {
+              "question": "dense irregular connective tissue that attaches the periosteum of articulating bones",
+              "answers": ["fibrous membrane"]
+            },
+            {
+              "question": "areolar connective tissue w/elastic fibers that houses synoviocytes = cells that secrete synovial fluid ",
+              "answers": ["synovial membrane"]
+            },
+            {
+              "question": "viscous liquid, containing hyaluronic acid, that cushions the joints and reduces friction between articulating bones",
+              "answers": ["synovial fluid"]
+            },
+            {
+              "question": "layer of hyaline cartilage(2-4mm thick) that covers the surface of articulating bones at synovial joints",
+              "answers": ["articular cartilage"]
+            },
+            {
+              "question": "Click the tissue which fibrous joints are comprised of (dense irregular connective)",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/JointClassifications1.png",
+              "hotspots": [
+                {
+                  "x": "26.03",
+                  "y": "4.67",
+                  "width": "47.27",
+                  "height": "46.95",
+                  "answers": [
+                    "dense irregular connective tissue"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the tissue which synchondroses (cartilaginous joint) is comprised of",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/JointClassifications1.png",
+              "hotspots": [
+                {
+                  "x": "4.19",
+                  "y": "57.55",
+                  "width": "42.48",
+                  "height": "36.13",
+                  "answers": [
+                    "hyaline cartilage"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the tissue which symphyses (cartilaginous joint) is comprised of",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/JointClassifications1.png",
+              "hotspots": [
+                {
+                  "x": "53.33",
+                  "y": "57.02",
+                  "width": "39.68",
+                  "height": "36.82",
+                  "answers": [
+                    "fibrocartilage"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "group_name": "Joint Classifications Three",
+          "questions": [
+            {
+              "question": "extra and intra capsular ligaments highly adapted for resisting strain; prevent extreme movements that may damage the articulation",
+              "answers": ["accessory ligaments"]
+            },
+            {
+              "question": "ligaments that lie outside of the articular capsule ex. fibular (LCL) and tibial (MCL) collateral ligaments of the knee joint",
+              "answers": ["extracapsular ligaments"]
+            },
+            {
+              "question": "ligaments that occur within the articular capsule but are excluded from the synovial cavity by folds of the synovial membrane ex. anterior (ACL) and posterior (PCL) cruciate ligaments of the knee joint ",
+              "answers": ["intracapsular ligaments"]
+            },
+            {
+              "question": "(aka menisci) crescent-shaped pads of fibrocartilage between articular surfaces of the bones that attach to the fibrous capsule; the knee has a lateral and medial meniscus",
+              "answers": ["articular discs"]
+            },
+            {
+              "question": "fibrocartilaginous lip that extends from the edge of the joint socket that helps deepend joint socket and increase contact area of articulating surfaces",
+              "answers": ["labrum"]
+            },
+            {
+              "question": "fluid filled sacs (similar but different from synovial fluid) that cushion movement at the joint, reducing friction ",
+              "answers": ["bursae"]
+            },
+            {
+              "question": "tube-like bursae (another way to reduce friction at the joint)</br></br>wrap around certain tendons that experience considerable friction</br></br>protects all sides of a tendon from friction",
+              "answers": ["tendon sheath"]
+            }
+          ]
+        },
+        {
+          "group_name": "Joint Classifications Knee",
+          "questions": [
+            {
+              "question": "Click the LCL",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/JointClassifications3.png",
+              "hotspots": [
+                {
+                  "x": "15.03",
+                  "y": "39.61",
+                  "width": "14.09",
+                  "height": "12.19",
+                  "answers": [
+                    "lcl"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the patella",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/JointClassifications3.png",
+              "hotspots": [
+                {
+                  "x": "22.67",
+                  "y": "5.86",
+                  "width": "13.24",
+                  "height": "12.19",
+                  "answers": [
+                    "patella"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the femur",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/JointClassifications3.png",
+              "hotspots": [
+                {
+                  "x": "61.04",
+                  "y": "1.80",
+                  "width": "13.75",
+                  "height": "12.50",
+                  "answers": [
+                    "femur"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the lateral miniscus",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/JointClassifications3.png",
+              "hotspots": [
+                {
+                  "x": "15.37",
+                  "y": "64.30",
+                  "width": "13.58",
+                  "height": "12.81",
+                  "answers": [
+                    "lateral miniscus"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the fibula",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/JointClassifications3.png",
+              "hotspots": [
+                {
+                  "x": "18.25",
+                  "y": "83.05",
+                  "width": "13.41",
+                  "height": "12.19",
+                  "answers": [
+                    "fibula"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the tibia",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/JointClassifications3.png",
+              "hotspots": [
+                {
+                  "x": "55.60",
+                  "y": "84.61",
+                  "width": "13.41",
+                  "height": "11.88",
+                  "answers": [
+                    "tibia"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the ACL",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/JointClassifications3.png",
+              "hotspots": [
+                {
+                  "x": "64.77",
+                  "y": "70.55",
+                  "width": "13.58",
+                  "height": "12.19",
+                  "answers": [
+                    "acl"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the medial miniscus",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/JointClassifications3.png",
+              "hotspots": [
+                {
+                  "x": "69.02",
+                  "y": "55.23",
+                  "width": "13.58",
+                  "height": "12.19",
+                  "answers": [
+                    "medial miniscus"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the MCL",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/JointClassifications3.png",
+              "hotspots": [
+                {
+                  "x": "64.60",
+                  "y": "37.73",
+                  "width": "13.58",
+                  "height": "12.19",
+                  "answers": [
+                    "mcl"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "group_name": "Joint Classifications Three",
+          "type": "matching",
+          "questions": [
+            {
+              "question": "decrease in the angle between articulating bones",
+              "answers": ["flexion"]
+            },
+            {
+              "question": "increase in the angle between articulating bones",
+              "answers": ["extension"]
+            },
+            {
+              "question": "occurs along the frontal plane and involves the intervertebral joints",
+              "answers": ["lateral flexion"]
+            },
+            {
+              "question": "continuation of extension beyond anatomical position",
+              "answers": ["hyperextension"]
+            },
+            {
+              "question": "movement of a bone away from midline",
+              "answers": ["abduction"]
+            },
+            {
+              "question": "movement of a bone toward the midline",
+              "answers": ["adduction"]
+            },
+            {
+              "question": "movement of the distal end of a body part in a circle",
+              "answers": ["circumduction"]
+            },
+            {
+              "question": "simple movement in which nearly flat bone surfaces move back-and-forth and from side-to-side with respect to one another ex. intercarpal and intertarsal joints ",
+              "answers": ["gliding"]
+            },
+            {
+              "question": "there is an increase or decrease in the angle between articulating bones",
+              "answers": ["angular movement"]
+            },
+            {
+              "question": "when a bone revolves around its own longitudinal axis",
+              "answers": ["rotation"]
+            }
+          ]
+        },
+        {
+          "group_name": "Joint Articulation Diagrams",
+          "questions": [
+            {
+              "question": "Click hyperextension",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/JointArticulation1.png",
+              "hotspots": [
+                {
+                  "x": "10.60",
+                  "y": "49.47",
+                  "width": "2.50",
+                  "height": "4.01",
+                  "answers": [
+                    "hyperextension"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click extension",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/JointArticulation1.png",
+              "hotspots": [
+                {
+                  "x": "19.66",
+                  "y": "48.05",
+                  "width": "2.41",
+                  "height": "4.01",
+                  "answers": [
+                    "extension"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click flexion",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/JointArticulation1.png",
+              "hotspots": [
+                {
+                  "x": "22.93",
+                  "y": "55.60",
+                  "width": "2.41",
+                  "height": "4.01",
+                  "answers": [
+                    "flexion"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click lateral flexion",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/JointArticulation1.png",
+              "hotspots": [
+                {
+                  "x": "34.74",
+                  "y": "29.42",
+                  "width": "2.33",
+                  "height": "4.01",
+                  "answers": [
+                    "lateral flexion"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click adduction",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/JointArticulation1.png",
+              "hotspots": [
+                {
+                  "x": "64.05",
+                  "y": "54.89",
+                  "width": "2.41",
+                  "height": "3.77",
+                  "answers": [
+                    "adduction"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click abduction",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/JointArticulation1.png",
+              "hotspots": [
+                {
+                  "x": "69.22",
+                  "y": "39.33",
+                  "width": "2.33",
+                  "height": "4.25",
+                  "answers": [
+                    "abduction"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click circumduction",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/JointArticulation1.png",
+              "hotspots": [
+                {
+                  "x": "86.38",
+                  "y": "53.71",
+                  "width": "2.33",
+                  "height": "4.01",
+                  "answers": [
+                    "circumduction"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click elevation",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/JointArticulation2.png",
+              "hotspots": [
+                {
+                  "x": "13.59",
+                  "y": "23.59",
+                  "width": "11.04",
+                  "height": "4.24",
+                  "answers": [
+                    "elevation"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click depression",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/JointArticulation2.png",
+              "hotspots": [
+                {
+                  "x": "28.04",
+                  "y": "19.77",
+                  "width": "11.15",
+                  "height": "4.10",
+                  "answers": [
+                    "depression"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click protraction",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/JointArticulation2.png",
+              "hotspots": [
+                {
+                  "x": "66.61",
+                  "y": "16.37",
+                  "width": "11.15",
+                  "height": "3.96",
+                  "answers": [
+                    "protraction"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click retraction",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/JointArticulation2.png",
+              "hotspots": [
+                {
+                  "x": "89.59",
+                  "y": "17.08",
+                  "width": "7.74",
+                  "height": "4.10",
+                  "answers": [
+                    "retraction"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click inversion",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/JointArticulation2.png",
+              "hotspots": [
+                {
+                  "x": "5.63",
+                  "y": "42.11",
+                  "width": "9.44",
+                  "height": "3.68",
+                  "answers": [
+                    "inversion"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click eversion",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/JointArticulation2.png",
+              "hotspots": [
+                {
+                  "x": "36.80",
+                  "y": "41.41",
+                  "width": "9.33",
+                  "height": "3.54",
+                  "answers": [
+                    "eversion"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click dorsiflexion",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/JointArticulation2.png",
+              "hotspots": [
+                {
+                  "x": "57.05",
+                  "y": "44.80",
+                  "width": "9.22",
+                  "height": "3.39",
+                  "answers": [
+                    "dorsiflexion"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click plantar flexion",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/JointArticulation2.png",
+              "hotspots": [
+                {
+                  "x": "60.92",
+                  "y": "51.73",
+                  "width": "6.83",
+                  "height": "6.08",
+                  "answers": [
+                    "plantar flexion"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the palm anterior (anatomical)",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/JointArticulation2.png",
+              "hotspots": [
+                {
+                  "x": "14.28",
+                  "y": "69.84",
+                  "width": "6.26",
+                  "height": "5.37",
+                  "answers": [
+                    "palm anterior"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the palm posterior (anatomical)",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/JointArticulation2.png",
+              "hotspots": [
+                {
+                  "x": "28.50",
+                  "y": "69.84",
+                  "width": "7.17",
+                  "height": "5.23",
+                  "answers": [
+                    "palm posterior"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click supination",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/JointArticulation2.png",
+              "hotspots": [
+                {
+                  "x": "16.44",
+                  "y": "89.36",
+                  "width": "8.99",
+                  "height": "3.25",
+                  "answers": [
+                    "supination"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click pronation",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/JointArticulation2.png",
+              "hotspots": [
+                {
+                  "x": "26.22",
+                  "y": "89.07",
+                  "width": "9.22",
+                  "height": "3.25",
+                  "answers": [
+                    "pronation"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click opposition",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/JointArticulation2.png",
+              "hotspots": [
+                {
+                  "x": "63.54",
+                  "y": "75.50",
+                  "width": "8.99",
+                  "height": "3.54",
+                  "answers": [
+                    "opposition"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "group_name": "Joint Classifications Four",
+          "type": "matching",
+          "questions": [
+            {
+              "question": "the articulating surfaces of bones are flat or slightly curved</br></br>primarily permit back-and-forth and side-to-side motion ex. navicular and 1st cuneiform",
+              "answers": ["plane joint"]
+            },
+            {
+              "question": "ithe convex surface of one bone fits into the concave surface of another</br></br>produce an angular, opening-and-closing motion like that of a hinged door ex. elbow ",
+              "answers": ["hinge joint"]
+            },
+            {
+              "question": "the rounded or pointed surface of one bone articulates with a ring formed partly by another bone and partly by a ligament ex. ulna and radius",
+              "answers": ["pivot joint"]
+            },
+            {
+              "question": "the convex oval-shaped projection of one bone fits into the oval-shaped depression of another bone ex. radius and scaphoid/lunate",
+              "answers": ["condyloid joint"]
+            },
+            {
+              "question": "the articular surface of one bone is saddle-shaped and the articular surface of the other bone fits into the saddle as a sitting rider would sit ex. trapezium and metacarpal 1",
+              "answers": ["saddle joint"]
+            },
+            {
+              "question": "consists of the ball-like surface of one bone fitting into a cup-like depression of another bone ex. hip and femur ",
+              "answers": ["ball-and-socket joints"]
+            },
+            {
+              "question": "movement of the distal end of a body part in a circle",
+              "answers": ["circumduction"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
