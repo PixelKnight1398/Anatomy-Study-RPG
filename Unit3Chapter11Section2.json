@@ -401,6 +401,682 @@
               ]
             }
           ]
+        },
+        {
+          "group_name": "Shoulder Muscles",
+          "questions": [
+            {
+              "question": "Click the supraspinatus anterior",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles6.png",
+              "hotspots": [
+                {
+                  "x": 3.36,
+                  "y": 2.2,
+                  "width": 19.62,
+                  "height": 8.81,
+                  "answers": [
+                    "supraspinatus anterior"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the subscapularis",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles6.png",
+              "hotspots": [
+                {
+                  "x": 3.5,
+                  "y": 40.55,
+                  "width": 17.56,
+                  "height": 9.38,
+                  "answers": [
+                    "subscapularis"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the rhomboid minor",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles6.png",
+              "hotspots": [
+                {
+                  "x": 66.87,
+                  "y": 11.01,
+                  "width": 17.56,
+                  "height": 6.53,
+                  "answers": [
+                    "rhomboid minor"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the supraspinatus posterior",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles6.png",
+              "hotspots": [
+                {
+                  "x": 79.22,
+                  "y": 25.78,
+                  "width": 19.34,
+                  "height": 9.66,
+                  "answers": [
+                    "supraspinatus posterior"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the infraspinatus",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles6.png",
+              "hotspots": [
+                {
+                  "x": 79.08,
+                  "y": 40.84,
+                  "width": 19.48,
+                  "height": 9.09,
+                  "answers": [
+                    "infraspinatus"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the teres minor",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles6.png",
+              "hotspots": [
+                {
+                  "x": 81,
+                  "y": 54.76,
+                  "width": 16.74,
+                  "height": 8.81,
+                  "answers": [
+                    "teres minor"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the teres major",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles6.png",
+              "hotspots": [
+                {
+                  "x": 81,
+                  "y": 66.41,
+                  "width": 16.74,
+                  "height": 8.81,
+                  "answers": [
+                    "teres major"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the rhomboid major",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles6.png",
+              "hotspots": [
+                {
+                  "x": 55.21,
+                  "y": 46.8,
+                  "width": 17.15,
+                  "height": 11.36,
+                  "answers": [
+                    "rhomboid major"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "group_name": "Upper Limb Muscles",
+          "questions": [
+            {
+              "question": "Click the deltoid",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles7.png",
+              "hotspots": [
+                {
+                  "x": 52.18,
+                  "y": 6.26,
+                  "width": 20.17,
+                  "height": 5.84,
+                  "answers": [
+                    "deltoid"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the subscapularis",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles7.png",
+              "hotspots": [
+                {
+                  "x": 52.02,
+                  "y": 15.32,
+                  "width": 33.45,
+                  "height": 6.3,
+                  "answers": [
+                    "subscapularis"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the teres major",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles7.png",
+              "hotspots": [
+                {
+                  "x": 52.18,
+                  "y": 23.46,
+                  "width": 29.75,
+                  "height": 6.3,
+                  "answers": [
+                    "teres major"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the biceps brachii",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles7.png",
+              "hotspots": [
+                {
+                  "x": 52.18,
+                  "y": 33.6,
+                  "width": 35.13,
+                  "height": 6.14,
+                  "answers": [
+                    "biceps brachii"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the triceps brachii",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles7.png",
+              "hotspots": [
+                {
+                  "x": 52.52,
+                  "y": 42.2,
+                  "width": 34.96,
+                  "height": 6.3,
+                  "answers": [
+                    "triceps brachii"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the brachioradialis",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles7.png",
+              "hotspots": [
+                {
+                  "x": 52.52,
+                  "y": 50.5,
+                  "width": 37.98,
+                  "height": 5.99,
+                  "answers": [
+                    "brachioradialis"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the pronator teres",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles7.png",
+              "hotspots": [
+                {
+                  "x": 52.52,
+                  "y": 60.02,
+                  "width": 36.3,
+                  "height": 6.3,
+                  "answers": [
+                    "pronator teres"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the flexor carpi radialis",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles7.png",
+              "hotspots": [
+                {
+                  "x": 52.35,
+                  "y": 67.86,
+                  "width": 45.88,
+                  "height": 6.14,
+                  "answers": [
+                    "flexor carpi radialis"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the palmaris longus",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles7.png",
+              "hotspots": [
+                {
+                  "x": 52.52,
+                  "y": 75.38,
+                  "width": 39.66,
+                  "height": 6.3,
+                  "answers": [
+                    "palmaris longus"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "group_name": "Lower limb Muscles",
+          "questions": [
+            {
+              "question": "Click the sartorius",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles8.png",
+              "hotspots": [
+                {
+                  "x": 5.96,
+                  "y": 8.32,
+                  "width": 11.67,
+                  "height": 6.01,
+                  "answers": [
+                    "sartorius"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the rectus femoris",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles8.png",
+              "hotspots": [
+                {
+                  "x": 1.69,
+                  "y": 18.19,
+                  "width": 17.57,
+                  "height": 6.44,
+                  "answers": [
+                    "rectus femoris"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the vastus lateralis",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles8.png",
+              "hotspots": [
+                {
+                  "x": 2.45,
+                  "y": 29.35,
+                  "width": 18.44,
+                  "height": 6.22,
+                  "answers": [
+                    "vastus lateralis"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the tibialis anterior",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles8.png",
+              "hotspots": [
+                {
+                  "x": 2.95,
+                  "y": 57.24,
+                  "width": 18.82,
+                  "height": 6.44,
+                  "answers": [
+                    "tibialis anterior"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the pectineus",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles8.png",
+              "hotspots": [
+                {
+                  "x": 34.69,
+                  "y": 4.88,
+                  "width": 13.17,
+                  "height": 6.01,
+                  "answers": [
+                    "pectineus"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the adductor longus",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles8.png",
+              "hotspots": [
+                {
+                  "x": 36.95,
+                  "y": 13.25,
+                  "width": 19.45,
+                  "height": 6.44,
+                  "answers": [
+                    "adductor longus"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the vastus medialis",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles8.png",
+              "hotspots": [
+                {
+                  "x": 32.75,
+                  "y": 32.78,
+                  "width": 18.57,
+                  "height": 6.44,
+                  "answers": [
+                    "vastus medialis"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the gluteus maximus",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles8.png",
+              "hotspots": [
+                {
+                  "x": 72.52,
+                  "y": 4.24,
+                  "width": 21.83,
+                  "height": 6.65,
+                  "answers": [
+                    "gluteus maximus"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the adductor magnus",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles8.png",
+              "hotspots": [
+                {
+                  "x": 72.9,
+                  "y": 14.11,
+                  "width": 21.83,
+                  "height": 6.65,
+                  "answers": [
+                    "adductor magnus"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the semimembranosus",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles8.png",
+              "hotspots": [
+                {
+                  "x": 74.65,
+                  "y": 23.55,
+                  "width": 23.34,
+                  "height": 6.65,
+                  "answers": [
+                    "semimembranosus"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the semitendinosus",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles8.png",
+              "hotspots": [
+                {
+                  "x": 74.53,
+                  "y": 31.49,
+                  "width": 20.08,
+                  "height": 6.65,
+                  "answers": [
+                    "semitendinosus"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the biceps femoris",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles8.png",
+              "hotspots": [
+                {
+                  "x": 74.65,
+                  "y": 39.43,
+                  "width": 18.57,
+                  "height": 6.65,
+                  "answers": [
+                    "biceps femoris"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the gastrocnemius",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles8.png",
+              "hotspots": [
+                {
+                  "x": 74.65,
+                  "y": 52.09,
+                  "width": 18.57,
+                  "height": 6.87,
+                  "answers": [
+                    "gastrocnemius"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "group_name": "Pelvic Muscles",
+          "questions": [
+            {
+              "question": "Click the external urethral sphincter",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles9.png",
+              "hotspots": [
+                {
+                  "x": 2.5,
+                  "y": 2.09,
+                  "width": 42,
+                  "height": 6.6,
+                  "answers": [
+                    "external urethral sphincter"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the perineal body",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles9.png",
+              "hotspots": [
+                {
+                  "x": 19.38,
+                  "y": 31.41,
+                  "width": 14.24,
+                  "height": 3.69,
+                  "answers": [
+                    "perineal body"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the ischiococcygeus",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles9.png",
+              "hotspots": [
+                {
+                  "x": 2.79,
+                  "y": 74.32,
+                  "width": 25.99,
+                  "height": 6.8,
+                  "answers": [
+                    "ischiococcygeus"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the external anal sphincter",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles9.png",
+              "hotspots": [
+                {
+                  "x": 15.42,
+                  "y": 83.64,
+                  "width": 36.86,
+                  "height": 6.6,
+                  "answers": [
+                    "external anal sphincter"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the ischiocavernosus",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles9.png",
+              "hotspots": [
+                {
+                  "x": 62.41,
+                  "y": 4.61,
+                  "width": 27.02,
+                  "height": 6.41,
+                  "answers": [
+                    "ischiocavernosus"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the bulbospongiosus",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles9.png",
+              "hotspots": [
+                {
+                  "x": 72.25,
+                  "y": 18.01,
+                  "width": 26.87,
+                  "height": 6.41,
+                  "answers": [
+                    "bulbospongiosus"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the perineal membrane",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles9.png",
+              "hotspots": [
+                {
+                  "x": 56.39,
+                  "y": 28.11,
+                  "width": 18.5,
+                  "height": 3.5,
+                  "answers": [
+                    "perineal membrane"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the superficial transverse perineal",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles9.png",
+              "hotspots": [
+                {
+                  "x": 77.53,
+                  "y": 29.85,
+                  "width": 17.91,
+                  "height": 18.45,
+                  "answers": [
+                    "superficial transverse perineal"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the puborectalis",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles9.png",
+              "hotspots": [
+                {
+                  "x": 60.79,
+                  "y": 74.71,
+                  "width": 21,
+                  "height": 6.21,
+                  "answers": [
+                    "puborectalis"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the pubococcygeus",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles9.png",
+              "hotspots": [
+                {
+                  "x": 60.65,
+                  "y": 82.86,
+                  "width": 25.11,
+                  "height": 6.6,
+                  "answers": [
+                    "pubococcygeus"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the iliococcygeus",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles9.png",
+              "hotspots": [
+                {
+                  "x": 60.65,
+                  "y": 91.21,
+                  "width": 21.29,
+                  "height": 6.21,
+                  "answers": [
+                    "iliococcygeus"
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ]
     }

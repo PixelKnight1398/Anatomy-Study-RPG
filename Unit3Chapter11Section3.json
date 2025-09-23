@@ -1,0 +1,685 @@
+{
+  "unit_id": "3",
+  "unit_name": "Joints and Muscles",
+  "quests": [
+    {
+      "quest_id": "11_3",
+      "quest_title": "Save the Laboratory! (Joints/Muscles)",
+      "quest_description": "Identify muscles to protect the laboratory from attack!",
+      "minion_images": [
+        "Images/Monsters/MuscleMinion1.png",
+        "Images/Monsters/MuscleMinion2.png",
+        "Images/Monsters/MuscleMinion3.png",
+        "Images/Monsters/MuscleMinion4.png"
+      ],
+      "boss_image": "Images/Monsters/MuscleBoss.png",
+      "groups": [
+        {
+          "group_name": "Sagittal bob",
+          "questions": [
+            {
+              "question": "Click the occipitofrontalis",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles10.png",
+              "hotspots": [
+                {
+                  "x": 53.05,
+                  "y": 20.85,
+                  "radius": 2.33,
+                  "answers": [
+                    "occipitofrontalis"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the temporalis",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles10.png",
+              "hotspots": [
+                {
+                  "x": 21.68,
+                  "y": 30.76,
+                  "radius": 2.33,
+                  "answers": [
+                    "temporalis"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the orbicularis oculi",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles10.png",
+              "hotspots": [
+                {
+                  "x": 73.3,
+                  "y": 37.45,
+                  "radius": 2.51,
+                  "answers": [
+                    "orbicularis oculi"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the zygomaticus minor",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles10.png",
+              "hotspots": [
+                {
+                  "x": 70.97,
+                  "y": 61.95,
+                  "radius": 2.15,
+                  "answers": [
+                    "zygomaticus minor"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the zygomaticus major",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles10.png",
+              "hotspots": [
+                {
+                  "x": 64.16,
+                  "y": 65.16,
+                  "radius": 2.33,
+                  "answers": [
+                    "zygomaticus major"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the risorius",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles10.png",
+              "hotspots": [
+                {
+                  "x": 61.65,
+                  "y": 69.58,
+                  "radius": 2.51,
+                  "answers": [
+                    "risorius"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the nasalis",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles10.png",
+              "hotspots": [
+                {
+                  "x": 82.8,
+                  "y": 50.03,
+                  "radius": 2.51,
+                  "answers": [
+                    "nasalis"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the masseter",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles10.png",
+              "hotspots": [
+                {
+                  "x": 51.97,
+                  "y": 65.03,
+                  "radius": 2.33,
+                  "answers": [
+                    "masseter"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the orbicularis oris",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles10.png",
+              "hotspots": [
+                {
+                  "x": 82.62,
+                  "y": 63.82,
+                  "radius": 2.51,
+                  "answers": [
+                    "orbicularis oris"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the sternocleidomastoid",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles10.png",
+              "hotspots": [
+                {
+                  "x": 37.63,
+                  "y": 75.87,
+                  "radius": 2.33,
+                  "answers": [
+                    "sternocleidomastoid"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the trapezius",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles10.png",
+              "hotspots": [
+                {
+                  "x": 24.91,
+                  "y": 80.02,
+                  "radius": 2.51,
+                  "answers": [
+                    "trapezius"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the epicranial aponeurosis",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles10.png",
+              "hotspots": [
+                {
+                  "x": 34.23,
+                  "y": 16.7,
+                  "radius": 2.69,
+                  "answers": [
+                    "epicranial aponeurosis"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "group_name": "Upper Leg",
+          "questions": [
+            {
+              "question": "Click the vastus lateralis",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles11.png",
+              "hotspots": [
+                {
+                  "x": 10.36,
+                  "y": 30.01,
+                  "radius": 1.79,
+                  "answers": [
+                    "vastus lateralis"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the rectus femoris",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles11.png",
+              "hotspots": [
+                {
+                  "x": 12.78,
+                  "y": 56.94,
+                  "radius": 1.79,
+                  "answers": [
+                    "rectus femoris"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the vastus medialis",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles11.png",
+              "hotspots": [
+                {
+                  "x": 22.66,
+                  "y": 23.54,
+                  "radius": 1.79,
+                  "answers": [
+                    "vastus medialis"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the sartorius in anterior view",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles11.png",
+              "hotspots": [
+                {
+                  "x": 18.24,
+                  "y": 61.74,
+                  "radius": 1.68,
+                  "answers": [
+                    "sartorius in anterior view"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the sartorius in medial view",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles11.png",
+              "hotspots": [
+                {
+                  "x": 38.64,
+                  "y": 46.71,
+                  "radius": 1.79,
+                  "answers": [
+                    "sartorius in medial view"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the gracilis",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles11.png",
+              "hotspots": [
+                {
+                  "x": 48.95,
+                  "y": 62.37,
+                  "radius": 1.79,
+                  "answers": [
+                    "gracilis"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the adductor longus",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles11.png",
+              "hotspots": [
+                {
+                  "x": 43.48,
+                  "y": 50.47,
+                  "radius": 1.79,
+                  "answers": [
+                    "adductor longus"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the adductor magnus in medial view",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles11.png",
+              "hotspots": [
+                {
+                  "x": 53.36,
+                  "y": 57.15,
+                  "radius": 1.58,
+                  "answers": [
+                    "adductor magnus in medial view"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the adductor magnus in posterior view",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles11.png",
+              "hotspots": [
+                {
+                  "x": 78.29,
+                  "y": 56.32,
+                  "radius": 1.47,
+                  "answers": [
+                    "adductor magnus in posterior view"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the gluteus maximus in medial view",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles11.png",
+              "hotspots": [
+                {
+                  "x": 57.99,
+                  "y": 71.14,
+                  "radius": 1.47,
+                  "answers": [
+                    "gluteus maximus in medial view"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the gluteus maximus in posterior view",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles11.png",
+              "hotspots": [
+                {
+                  "x": 79.65,
+                  "y": 78.24,
+                  "radius": 2,
+                  "answers": [
+                    "gluteus maximus in posterior view"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the semimembranosus in medial view",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles11.png",
+              "hotspots": [
+                {
+                  "x": 54,
+                  "y": 33.77,
+                  "radius": 1.37,
+                  "answers": [
+                    "semimembranosus in medial view"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the semimembranosus in posterior view",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles11.png",
+              "hotspots": [
+                {
+                  "x": 79.76,
+                  "y": 38.15,
+                  "radius": 1.37,
+                  "answers": [
+                    "semimembranosus in posterior view"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the semitendinosus",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles11.png",
+              "hotspots": [
+                {
+                  "x": 83.75,
+                  "y": 35.44,
+                  "radius": 1.68,
+                  "answers": [
+                    "semitendinosus"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the biceps femoris",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles11.png",
+              "hotspots": [
+                {
+                  "x": 88.8,
+                  "y": 41.7,
+                  "radius": 1.68,
+                  "answers": [
+                    "biceps femoris"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "group_name": "Shoulder Muscles",
+          "questions": [
+            {
+              "question": "Click the deltoid posterior view",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles12.png",
+              "hotspots": [
+                {
+                  "x": 44.49,
+                  "y": 48.27,
+                  "radius": 3.28,
+                  "answers": [
+                    "deltoid posterior view"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the deltoid anterior view",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles12.png",
+              "hotspots": [
+                {
+                  "x": 59.5,
+                  "y": 47.79,
+                  "radius": 3.63,
+                  "answers": [
+                    "deltoid anterior view"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the teres major posterior view",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles12.png",
+              "hotspots": [
+                {
+                  "x": 16.12,
+                  "y": 23.62,
+                  "radius": 3.4,
+                  "answers": [
+                    "teres major posterior view"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the teres major anterior view",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles12.png",
+              "hotspots": [
+                {
+                  "x": 87.16,
+                  "y": 16.69,
+                  "radius": 2.93,
+                  "answers": [
+                    "teres major anterior view"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the teres minor posterior view",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles12.png",
+              "hotspots": [
+                {
+                  "x": 22.22,
+                  "y": 40.85,
+                  "radius": 3.52,
+                  "answers": [
+                    "teres minor posterior view"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the infraspinatus",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles12.png",
+              "hotspots": [
+                {
+                  "x": 15.89,
+                  "y": 60.47,
+                  "radius": 3.17,
+                  "answers": [
+                    "infraspinatus"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the supraspinatus",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles12.png",
+              "hotspots": [
+                {
+                  "x": 14.48,
+                  "y": 81.76,
+                  "radius": 2.81,
+                  "answers": [
+                    "supraspinatus"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the subscapularis",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles12.png",
+              "hotspots": [
+                {
+                  "x": 84.35,
+                  "y": 52.81,
+                  "radius": 2.81,
+                  "answers": [
+                    "subscapularis"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "group_name": "Arm Muscles",
+          "questions": [
+            {
+              "question": "Click the deltoid",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles13.png",
+              "hotspots": [
+                {
+                  "x": 31.42,
+                  "y": 90.61,
+                  "radius": 3.26,
+                  "answers": [
+                    "deltoid"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the biceps brachii",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles13.png",
+              "hotspots": [
+                {
+                  "x": 35.53,
+                  "y": 53.51,
+                  "radius": 3.83,
+                  "answers": [
+                    "biceps brachii"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the brachialis",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles13.png",
+              "hotspots": [
+                {
+                  "x": 24.89,
+                  "y": 54.11,
+                  "radius": 4.54,
+                  "answers": [
+                    "brachialis"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the triceps brachii",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles13.png",
+              "hotspots": [
+                {
+                  "x": 14.96,
+                  "y": 56.22,
+                  "radius": 3.83,
+                  "answers": [
+                    "triceps brachii"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the brachioradialis",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles13.png",
+              "hotspots": [
+                {
+                  "x": 67.45,
+                  "y": 72.51,
+                  "radius": 2.41,
+                  "answers": [
+                    "brachioradialis"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the pronator teres",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles13.png",
+              "hotspots": [
+                {
+                  "x": 71.56,
+                  "y": 81.86,
+                  "radius": 2.55,
+                  "answers": [
+                    "pronator teres"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the flexor carpi radialis",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles13.png",
+              "hotspots": [
+                {
+                  "x": 72.27,
+                  "y": 75.68,
+                  "radius": 2.84,
+                  "answers": [
+                    "flexor carpi radialis"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the palmaris longus",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles13.png",
+              "hotspots": [
+                {
+                  "x": 77.38,
+                  "y": 73.72,
+                  "radius": 3.12,
+                  "answers": [
+                    "palmaris longus"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

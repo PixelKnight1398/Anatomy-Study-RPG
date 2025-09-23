@@ -902,7 +902,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         'Unit2Chapter7.json',
         'Unit3Chapter9.json',
         'Unit3Chapter11.json',
-        'Unit3Chapter11Section2.json'
+        'Unit3Chapter11Section2.json',
+        'Unit3Chapter11Section3.json'
     ]);
     loadPlayerData();
     
