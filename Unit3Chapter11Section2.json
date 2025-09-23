@@ -1,0 +1,408 @@
+{
+  "unit_id": "3",
+  "unit_name": "Joints and Muscles",
+  "quests": [
+    {
+      "quest_id": "11_2",
+      "quest_title": "Muscle Mystery! (Joints/Muscles)",
+      "quest_description": "Identify muscles to solve the mystery!",
+      "minion_images": [
+        "Images/Monsters/MuscleMinion1.png",
+        "Images/Monsters/MuscleMinion2.png",
+        "Images/Monsters/MuscleMinion3.png",
+        "Images/Monsters/MuscleMinion4.png"
+      ],
+      "boss_image": "Images/Monsters/MuscleBoss.png",
+      "groups": [
+        {
+          "group_name": "Facial and Neck Muscles Part 1",
+          "type": "matching",
+          "questions": [
+            {
+              "question": "both frontal and occipital bellies + epicranial aponeurosis",
+              "answers": ["occipitofrontalis"]
+            },
+            {
+              "question": "covers the temporal bone; facilitates movement of mandible",
+              "answers": ["temporalis"]
+            },
+            {
+              "question": "circular muscle that closes the eyelid",
+              "answers": ["orbicularis oculi"]
+            },
+            {
+              "question": "draws upper lip backward, upward, outward; used in smiling",
+              "answers": ["zygomaticus minor"]
+            },
+            {
+              "question": "pulls the angle of the mouth superolaterally; used in laughing",
+              "answers": ["zygomaticus major"]
+            },
+            {
+              "question": "facilitates facial expressions by pulling the corners of the mouth laterally",
+              "answers": ["risorius"]
+            },
+            {
+              "question": "facilitates depression of mandible and tenses skin of the anterior neck",
+              "answers": ["playsma"]
+            }
+          ]
+        },
+        {
+          "group_name": "Facial and Neck Muscles Part 2",
+          "type": "matching",
+          "questions": [
+            {
+              "question": "moves eyebrows inferiorly/medially",
+              "answers": ["corrugator supercilii"]
+            },
+            {
+              "question": "covers the nasal bone; wrinkles skin on the nose and facilitates nostril flare",
+              "answers": ["nasalis"]
+            },
+            {
+              "question": "needed for whistling, blowing, and sucking",
+              "answers": ["buccinator"]
+            },
+            {
+              "question": "considered the strongest muscle in the body; muscle of mastication",
+              "answers": ["masseter"]
+            },
+            {
+              "question": "aka “kissing muscle”; needed for lip puckering",
+              "answers": ["orbicularis oris"]
+            },
+            {
+              "question": "origin = sternum + clavicle, insertion = mastoid process of the temporal bone",
+              "answers": ["sternocleidomastoid"]
+            },
+            {
+              "question": "elevates and protrudes lower lip (as in pouting)",
+              "answers": ["mentalis"]
+            }
+          ]
+        },
+        {
+          "group_name": "Pelvic Floor Muscles",
+          "type": "matching",
+          "questions": [
+            {
+              "question": "assists w/ erection of clitoris/penis",
+              "answers": ["bulbospongiosus"]
+            },
+            {
+              "question": "stabilizes erection of clitoris/penis by slowing blood return",
+              "answers": ["ischiocavernosus"]
+            },
+            {
+              "question": "stabilizes the perineal body",
+              "answers": ["superficial transverse perineal"]
+            },
+            {
+              "question": "maintains fecal continence and assists w/ defecation",
+              "answers": ["puborectalis"]
+            },
+            {
+              "question": "supports/maintains position of pelvic viscera",
+              "answers": ["pubococcygeus"]
+            },
+            {
+              "question": "supports/maintains position of pelvic viscera",
+              "answers": ["iliococcygeus"]
+            },
+            {
+              "question": "voluntary control of urination/defecation",
+              "answers": ["external anal and urethral sphincters"]
+            },
+            {
+              "question": "helps support the pelvic floor and pelvic organs",
+              "answers": ["ischiococcygeus"]
+            }
+          ]
+        },
+        {
+          "group_name": "Eye Muscles",
+          "questions": [
+            {
+              "question": "Click the superior oblique",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles4.png",
+              "hotspots": [
+                {
+                  "x": 1.63,
+                  "y": 9.69,
+                  "width": 25.61,
+                  "height": 8.66,
+                  "answers": [
+                    "superior oblique"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the superior rectus",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles4.png",
+              "hotspots": [
+                {
+                  "x": 1.9,
+                  "y": 29.6,
+                  "width": 25.34,
+                  "height": 8.23,
+                  "answers": [
+                    "superior rectus"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the medial rectus",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles4.png",
+              "hotspots": [
+                {
+                  "x": 1.76,
+                  "y": 40.42,
+                  "width": 25.34,
+                  "height": 8.66,
+                  "answers": [
+                    "medial rectus"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the lateral rectus",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles4.png",
+              "hotspots": [
+                {
+                  "x": 1.63,
+                  "y": 61.42,
+                  "width": 25.47,
+                  "height": 8.44,
+                  "answers": [
+                    "lateral rectus"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the inferior rectus",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles4.png",
+              "hotspots": [
+                {
+                  "x": 1.49,
+                  "y": 75.49,
+                  "width": 25.34,
+                  "height": 8.44,
+                  "answers": [
+                    "inferior rectus"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the inferior oblique",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles4.png",
+              "hotspots": [
+                {
+                  "x": 1.36,
+                  "y": 88.04,
+                  "width": 25.47,
+                  "height": 8.66,
+                  "answers": [
+                    "inferior oblique"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "group_name": "Trunk Muscles",
+          "questions": [
+            {
+              "question": "Click the pectoralis major",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles5.png",
+              "hotspots": [
+                {
+                  "x": 2.33,
+                  "y": 15.87,
+                  "width": 23.99,
+                  "height": 8.79,
+                  "answers": [
+                    "pectoralis major"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the linea alba",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles5.png",
+              "hotspots": [
+                {
+                  "x": 9.42,
+                  "y": 48.56,
+                  "width": 15.14,
+                  "height": 8.52,
+                  "answers": [
+                    "linea alba"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the external oblique",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles5.png",
+              "hotspots": [
+                {
+                  "x": 1.69,
+                  "y": 60.37,
+                  "width": 25.76,
+                  "height": 9.07,
+                  "answers": [
+                    "external oblique"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the inguinal ligament",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles5.png",
+              "hotspots": [
+                {
+                  "x": 3.46,
+                  "y": 72.73,
+                  "width": 24.32,
+                  "height": 9.07,
+                  "answers": [
+                    "inguinal ligament"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the internal intercostals",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles5.png",
+              "hotspots": [
+                {
+                  "x": 64.09,
+                  "y": 0.76,
+                  "width": 28.34,
+                  "height": 8.52,
+                  "answers": [
+                    "internal intercostals"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the external intercostals",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles5.png",
+              "hotspots": [
+                {
+                  "x": 66.67,
+                  "y": 11.2,
+                  "width": 28.99,
+                  "height": 8.52,
+                  "answers": [
+                    "external intercostals"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the serratus anterior",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles5.png",
+              "hotspots": [
+                {
+                  "x": 68.12,
+                  "y": 24.38,
+                  "width": 24.15,
+                  "height": 8.52,
+                  "answers": [
+                    "serratus anterior"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the rectus abdominis",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles5.png",
+              "hotspots": [
+                {
+                  "x": 67.63,
+                  "y": 41.96,
+                  "width": 24.48,
+                  "height": 9.07,
+                  "answers": [
+                    "rectus abdominis"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the transversus abdominis",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles5.png",
+              "hotspots": [
+                {
+                  "x": 67.79,
+                  "y": 56.25,
+                  "width": 31.24,
+                  "height": 8.52,
+                  "answers": [
+                    "transversus abdominis"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the internal oblique",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles5.png",
+              "hotspots": [
+                {
+                  "x": 67.63,
+                  "y": 68.89,
+                  "width": 25.76,
+                  "height": 8.79,
+                  "answers": [
+                    "internal oblique"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the tendinous intersections",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles5.png",
+              "hotspots": [
+                {
+                  "x": 58.62,
+                  "y": 88.12,
+                  "width": 32.05,
+                  "height": 8.79,
+                  "answers": [
+                    "tendinous intersections"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

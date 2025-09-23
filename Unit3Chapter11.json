@@ -1,0 +1,631 @@
+{
+  "unit_id": "3",
+  "unit_name": "Joints and Muscles",
+  "quests": [
+    {
+      "quest_id": "11",
+      "quest_title": "Robo Takeover Round Two! (Joints/Muscles)",
+      "quest_description": "Use your muscles to defeat your opponents!",
+      "minion_images": [
+        "Images/Monsters/MuscleMinion1.png",
+        "Images/Monsters/MuscleMinion2.png",
+        "Images/Monsters/MuscleMinion3.png",
+        "Images/Monsters/MuscleMinion4.png"
+      ],
+      "boss_image": "Images/Monsters/MuscleBoss.png",
+      "groups": [
+        {
+          "group_name": "Fascicle Arrangement",
+          "questions": [
+            {
+              "question": "Click the parallel fascicle arrangement",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles1.png",
+              "hotspots": [
+                {
+                  "x": 21.07,
+                  "y": 15.24,
+                  "radius": 9.24,
+                  "answers": [
+                    "parallel"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the fusiform fascicle arrangement",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles1.png",
+              "hotspots": [
+                {
+                  "x": 72.15,
+                  "y": 15.03,
+                  "radius": 11.11,
+                  "answers": [
+                    "fusiform"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the circular fascicle arrangement",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles1.png",
+              "hotspots": [
+                {
+                  "x": 21.36,
+                  "y": 47.47,
+                  "radius": 10.82,
+                  "answers": [
+                    "circular"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the triangular fascicle arrangement",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles1.png",
+              "hotspots": [
+                {
+                  "x": 72.87,
+                  "y": 47.47,
+                  "radius": 13.56,
+                  "answers": [
+                    "triangular"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the unipennate fascicle arrangement",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles1.png",
+              "hotspots": [
+                {
+                  "x": 13.13,
+                  "y": 86.31,
+                  "radius": 14.14,
+                  "answers": [
+                    "unipennate"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the bipennate fascicle arrangement",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles1.png",
+              "hotspots": [
+                {
+                  "x": 50.94,
+                  "y": 85.07,
+                  "radius": 12.55,
+                  "answers": [
+                    "bipennate"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the multipennate fascicle arrangement",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles1.png",
+              "hotspots": [
+                {
+                  "x": 85.57,
+                  "y": 85.28,
+                  "radius": 13.71,
+                  "answers": [
+                    "multipennate"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "group_name": "Fascicle Arrangement Muscle Identification",
+          "questions": [
+            {
+              "question": "Click the triangular muscle",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles2.png",
+              "hotspots": [
+                {
+                  "x": 26.9,
+                  "y": 17.71,
+                  "radius": 19,
+                  "answers": [
+                    "triangular"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the circular muscle",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles2.png",
+              "hotspots": [
+                {
+                  "x": 75.9,
+                  "y": 21.11,
+                  "radius": 16.6,
+                  "answers": [
+                    "circular"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the bipennate muscle",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles2.png",
+              "hotspots": [
+                {
+                  "x": 24.9,
+                  "y": 67.61,
+                  "radius": 23.4,
+                  "answers": [
+                    "bipennate"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the fusiform muscle",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles2.png",
+              "hotspots": [
+                {
+                  "x": 70.3,
+                  "y": 69.61,
+                  "radius": 22.8,
+                  "answers": [
+                    "fusiform"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "group_name": "Relative Muscle Size Part 1",
+          "type": "matching",
+          "questions": [
+            {
+              "question": "largest",
+              "answers": ["maximus"]
+            },
+            {
+              "question": "smallest",
+              "answers": ["minimus"]
+            },
+            {
+              "question": "long",
+              "answers": ["longus"]
+            },
+            {
+              "question": "short",
+              "answers": ["brevis"]
+            },
+            {
+              "question": "widest",
+              "answers": ["latissimus"]
+            }
+          ]
+        },
+        {
+          "group_name": "Relative Muscle Size Part 2",
+          "type": "matching",
+          "questions": [
+            {
+              "question": "longest",
+              "answers": ["longissimus"]
+            },
+            {
+              "question": "large",
+              "answers": ["magnus"]
+            },
+            {
+              "question": "larger",
+              "answers": ["major"]
+            },
+            {
+              "question": "smaller",
+              "answers": ["minor"]
+            },
+            {
+              "question": "huge",
+              "answers": ["vastus"]
+            }
+          ]
+        },
+        {
+          "group_name": "Muscle Shape Part 1",
+          "type": "matching",
+          "questions": [
+            {
+              "question": "triangular",
+              "answers": ["deltoid"]
+            },
+            {
+              "question": "trapezoid",
+              "answers": ["trapezius"]
+            },
+            {
+              "question": "saw-tooth",
+              "answers": ["serratus"]
+            },
+            {
+              "question": "diamond",
+              "answers": ["rhomboid"]
+            },
+            {
+              "question": "circular",
+              "answers": ["orbicularis"]
+            }
+          ]
+        },
+        {
+          "group_name": "Muscle Shape Part 2",
+          "type": "matching",
+          "questions": [
+            {
+              "question": "comb-like",
+              "answers": ["pectinate"]
+            },
+            {
+              "question": "flat",
+              "answers": ["platys"]
+            },
+            {
+              "question": "square",
+              "answers": ["quadratus"]
+            },
+            {
+              "question": "slender",
+              "answers": ["gracilis"]
+            }
+          ]
+        },
+        {
+          "group_name": "Muscle Action Part 1",
+          "type": "matching",
+          "questions": [
+            {
+              "question": "decreases joint angle",
+              "answers": ["flexor"]
+            },
+            {
+              "question": "increases joint angle",
+              "answers": ["extensor"]
+            },
+            {
+              "question": "moves bone away from midline",
+              "answers": ["abductor"]
+            },
+            {
+              "question": "moves bone closer to midline",
+              "answers": ["adductor"]
+            },
+            {
+              "question": "raises/elevates body part",
+              "answers": ["levator"]
+            }
+          ]
+        },
+        {
+          "group_name": "Muscle Action Part 2",
+          "type": "matching",
+          "questions": [
+            {
+              "question": "lowers/depresses body part",
+              "answers": ["depressor"]
+            },
+            {
+              "question": "turns palm anteriorly",
+              "answers": ["supinator"]
+            },
+            {
+              "question": "turns palm posteriorly",
+              "answers": ["pronator"]
+            },
+            {
+              "question": "decreases size of an opening",
+              "answers": ["sphincter"]
+            },
+            {
+              "question": "makes body part rigid",
+              "answers": ["tensor"]
+            },
+            {
+              "question": "rotates bone around longitudinal axis",
+              "answers": ["rotator"]
+            }
+          ]
+        },
+        {
+          "group_name": "Muscle Location/Origin",
+          "type": "matching",
+          "questions": [
+            {
+              "question": "two origins",
+              "answers": ["biceps"]
+            },
+            {
+              "question": "three origins",
+              "answers": ["triceps"]
+            },
+            {
+              "question": "four origins",
+              "answers": ["quadriceps"]
+            }
+          ]
+        },
+        {
+          "group_name": "Joint Classifications Three",
+          "questions": [
+            {
+              "question": "extra and intra capsular ligaments highly adapted for resisting strain; prevent extreme movements that may damage the articulation",
+              "answers": ["accessory ligaments"]
+            },
+            {
+              "question": "ligaments that lie outside of the articular capsule ex. fibular (LCL) and tibial (MCL) collateral ligaments of the knee joint",
+              "answers": ["extracapsular ligaments"]
+            },
+            {
+              "question": "ligaments that occur within the articular capsule but are excluded from the synovial cavity by folds of the synovial membrane ex. anterior (ACL) and posterior (PCL) cruciate ligaments of the knee joint ",
+              "answers": ["intracapsular ligaments"]
+            },
+            {
+              "question": "(aka menisci) crescent-shaped pads of fibrocartilage between articular surfaces of the bones that attach to the fibrous capsule; the knee has a lateral and medial meniscus",
+              "answers": ["articular discs"]
+            },
+            {
+              "question": "fibrocartilaginous lip that extends from the edge of the joint socket that helps deepend joint socket and increase contact area of articulating surfaces",
+              "answers": ["labrum"]
+            },
+            {
+              "question": "fluid filled sacs (similar but different from synovial fluid) that cushion movement at the joint, reducing friction ",
+              "answers": ["bursae"]
+            },
+            {
+              "question": "tube-like bursae (another way to reduce friction at the joint)</br></br>wrap around certain tendons that experience considerable friction</br></br>protects all sides of a tendon from friction",
+              "answers": ["tendon sheath"]
+            }
+          ]
+        },
+        {
+          "group_name": "Head and Neck Muscle Identification",
+          "questions": [
+            {
+              "question": "Click the epicranial aponeurosis",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles3.png",
+              "hotspots": [
+                {
+                  "x": 8.34,
+                  "y": 2.48,
+                  "width": 26.56,
+                  "height": 7.76,
+                  "answers": [
+                    "epicranial aponeurosis"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the occipitofrontalis",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles3.png",
+              "hotspots": [
+                {
+                  "x": 14.57,
+                  "y": 13.13,
+                  "width": 20.23,
+                  "height": 7.94,
+                  "answers": [
+                    "occipitofrontalis"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the temporalis",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles3.png",
+              "hotspots": [
+                {
+                  "x": 17.45,
+                  "y": 23.24,
+                  "width": 14.48,
+                  "height": 8.3,
+                  "answers": [
+                    "temporalis"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the orbicularis oculi",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles3.png",
+              "hotspots": [
+                {
+                  "x": 11.41,
+                  "y": 32.99,
+                  "width": 19.65,
+                  "height": 8.12,
+                  "answers": [
+                    "orbicularis oculi"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the zyomaticus minor and zygomaticus major",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles3.png",
+              "hotspots": [
+                {
+                  "x": 1.05,
+                  "y": 42.73,
+                  "width": 28,
+                  "height": 12.27,
+                  "answers": [
+                    "zyomaticus minor and zygomaticus major"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the risorius",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles3.png",
+              "hotspots": [
+                {
+                  "x": 7.57,
+                  "y": 56.63,
+                  "width": 8.92,
+                  "height": 6.68,
+                  "answers": [
+                    "risorius"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the platysma",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles3.png",
+              "hotspots": [
+                {
+                  "x": 18.31,
+                  "y": 64.21,
+                  "width": 12.08,
+                  "height": 8.12,
+                  "answers": [
+                    "platysma"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the corrugator supercilii",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles3.png",
+              "hotspots": [
+                {
+                  "x": 69.42,
+                  "y": 15.84,
+                  "width": 24.07,
+                  "height": 8.12,
+                  "answers": [
+                    "corrugator supercilii"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the nasalis",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles3.png",
+              "hotspots": [
+                {
+                  "x": 68.94,
+                  "y": 39.12,
+                  "width": 10.93,
+                  "height": 7.94,
+                  "answers": [
+                    "nasalis"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the masseter",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles3.png",
+              "hotspots": [
+                {
+                  "x": 72.77,
+                  "y": 48.33,
+                  "width": 13.14,
+                  "height": 8.3,
+                  "answers": [
+                    "masseter"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the buccinator",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles3.png",
+              "hotspots": [
+                {
+                  "x": 86.96,
+                  "y": 53.38,
+                  "width": 12.46,
+                  "height": 6.14,
+                  "answers": [
+                    "buccinator"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the orbicularis oris",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles3.png",
+              "hotspots": [
+                {
+                  "x": 69.8,
+                  "y": 60.6,
+                  "width": 18.5,
+                  "height": 8.12,
+                  "answers": [
+                    "orbicularis oris"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the mentalis",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles3.png",
+              "hotspots": [
+                {
+                  "x": 72.29,
+                  "y": 79.38,
+                  "width": 10.55,
+                  "height": 5.6,
+                  "answers": [
+                    "mentalis"
+                  ]
+                }
+              ]
+            },
+            {
+              "question": "Click the sternocleidomastoi",
+              "type": "image-hotspot",
+              "image_url": "Images/Diagrams/Muscles3.png",
+              "hotspots": [
+                {
+                  "x": 69.03,
+                  "y": 88.58,
+                  "width": 25.12,
+                  "height": 8.3,
+                  "answers": [
+                    "sternocleidomastoi"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
