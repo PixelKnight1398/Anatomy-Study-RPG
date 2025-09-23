@@ -150,19 +150,16 @@
 
             if (shapeSelector.value === 'box') {
                 hotspot = {
-                    x: Math.min(startX, endX).toFixed(2),
-                    y: Math.min(startY, endY).toFixed(2),
-                    width: Math.abs(endX - startX).toFixed(2),
-                    height: Math.abs(endY - startY).toFixed(2),
+                    x: parseFloat(Math.min(startX, endX).toFixed(2)),
+                    y: parseFloat(Math.min(startY, endY).toFixed(2)),
+                    width: parseFloat(Math.abs(endX - startX).toFixed(2)),
+                    height: parseFloat(Math.abs(endY - startY).toFixed(2)),
                     answers: answers
                 };
             } else { // Circle
-                // Set the center of the circle to the start position
-                hotspot.x = startX.toFixed(2);
-                hotspot.y = startY.toFixed(2);
-                
-                // Calculate the radius based on horizontal drag
-                hotspot.radius = Math.abs(endX - startX).toFixed(2);
+                hotspot.x = parseFloat(startX.toFixed(2));
+                hotspot.y = parseFloat(startY.toFixed(2));
+                hotspot.radius = parseFloat(Math.abs(endX - startX).toFixed(2));
                 hotspot.answers = answers;
             }
 

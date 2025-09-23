@@ -4,14 +4,15 @@
   "quests": [
     {
       "quest_id": "9",
-      "quest_title": "Joints",
+      "quest_title": "Robo Takeover! (Joints/Muscles)",
       "quest_description": "Understand joints to defeat your opponents!",
       "minion_images": [
-        "Images/Monsters/SkullMinion1.png",
-        "Images/Monsters/SkullMinion2.png",
-        "Images/Monsters/SkullMinion3.png"
+        "Images/Monsters/MuscleMinion1.png",
+        "Images/Monsters/MuscleMinion2.png",
+        "Images/Monsters/MuscleMinion3.png",
+        "Images/Monsters/MuscleMinion4.png"
       ],
-      "boss_image": "Images/Monsters/SkullBoss.png",
+      "boss_image": "Images/Monsters/MuscleBoss.png",
       "groups": [
         {
           "group_name": "Joint Nomenclature",
@@ -109,10 +110,10 @@
               "image_url": "Images/Diagrams/JointClassifications2.png",
               "hotspots": [
                 {
-                  "x": "25.06",
-                  "y": "14.57",
-                  "width": "10.39",
-                  "height": "7.49",
+                  "x": 25.06,
+                  "y": 14.57,
+                  "width": 10.39,
+                  "height": 7.49,
                   "answers": [
                     "articulating bone"
                   ]
@@ -125,10 +126,10 @@
               "image_url": "Images/Diagrams/JointClassifications2.png",
               "hotspots": [
                 {
-                  "x": "23.12",
-                  "y": "40.78",
-                  "width": "10.13",
-                  "height": "7.13",
+                  "x": 23.12,
+                  "y": 40.78,
+                  "width": 10.13,
+                  "height": 7.13,
                   "answers": [
                     "articular cartilage"
                   ]
@@ -141,10 +142,10 @@
               "image_url": "Images/Diagrams/JointClassifications2.png",
               "hotspots": [
                 {
-                  "x": "82.34",
-                  "y": "1.02",
-                  "width": "10.13",
-                  "height": "6.77",
+                  "x": 82.34,
+                  "y": 1.02,
+                  "width": 10.13,
+                  "height": 6.77,
                   "answers": [
                     "periosteum"
                   ]
@@ -157,10 +158,10 @@
               "image_url": "Images/Diagrams/JointClassifications2.png",
               "hotspots": [
                 {
-                  "x": "84.29",
-                  "y": "13.68",
-                  "width": "10.13",
-                  "height": "7.13",
+                  "x": 84.29,
+                  "y": 13.68,
+                  "width": 10.13,
+                  "height": 7.13,
                   "answers": [
                     "fibrous membrane"
                   ]
@@ -173,10 +174,10 @@
               "image_url": "Images/Diagrams/JointClassifications2.png",
               "hotspots": [
                 {
-                  "x": "84.29",
-                  "y": "25.45",
-                  "width": "10.13",
-                  "height": "6.77",
+                  "x": 84.29,
+                  "y": 25.45,
+                  "width": 10.13,
+                  "height": 6.77,
                   "answers": [
                     "synovial membrane"
                   ]
@@ -189,10 +190,10 @@
               "image_url": "Images/Diagrams/JointClassifications2.png",
               "hotspots": [
                 {
-                  "x": "77.40",
-                  "y": "71.43",
-                  "width": "10.00",
-                  "height": "7.13",
+                  "x": 77.4,
+                  "y": 71.43,
+                  "width": 10,
+                  "height": 7.13,
                   "answers": [
                     "synovial cavity"
                   ]
@@ -258,10 +259,10 @@
               "image_url": "Images/Diagrams/JointClassifications1.png",
               "hotspots": [
                 {
-                  "x": "26.03",
-                  "y": "4.67",
-                  "width": "47.27",
-                  "height": "46.95",
+                  "x": 26.03,
+                  "y": 4.67,
+                  "width": 47.27,
+                  "height": 46.95,
                   "answers": [
                     "dense irregular connective tissue"
                   ]
@@ -274,10 +275,10 @@
               "image_url": "Images/Diagrams/JointClassifications1.png",
               "hotspots": [
                 {
-                  "x": "4.19",
-                  "y": "57.55",
-                  "width": "42.48",
-                  "height": "36.13",
+                  "x": 4.19,
+                  "y": 57.55,
+                  "width": 42.48,
+                  "height": 36.13,
                   "answers": [
                     "hyaline cartilage"
                   ]
@@ -290,10 +291,10 @@
               "image_url": "Images/Diagrams/JointClassifications1.png",
               "hotspots": [
                 {
-                  "x": "53.33",
-                  "y": "57.02",
-                  "width": "39.68",
-                  "height": "36.82",
+                  "x": 53.33,
+                  "y": 57.02,
+                  "width": 39.68,
+                  "height": 36.82,
                   "answers": [
                     "fibrocartilage"
                   ]
@@ -344,10 +345,10 @@
               "image_url": "Images/Diagrams/JointClassifications3.png",
               "hotspots": [
                 {
-                  "x": "15.03",
-                  "y": "39.61",
-                  "width": "14.09",
-                  "height": "12.19",
+                  "x": 15.03,
+                  "y": 39.61,
+                  "width": 14.09,
+                  "height": 12.19,
                   "answers": [
                     "lcl"
                   ]
@@ -360,10 +361,10 @@
               "image_url": "Images/Diagrams/JointClassifications3.png",
               "hotspots": [
                 {
-                  "x": "22.67",
-                  "y": "5.86",
-                  "width": "13.24",
-                  "height": "12.19",
+                  "x": 22.67,
+                  "y": 5.86,
+                  "width": 13.24,
+                  "height": 12.19,
                   "answers": [
                     "patella"
                   ]
@@ -376,10 +377,10 @@
               "image_url": "Images/Diagrams/JointClassifications3.png",
               "hotspots": [
                 {
-                  "x": "61.04",
-                  "y": "1.80",
-                  "width": "13.75",
-                  "height": "12.50",
+                  "x": 61.04,
+                  "y": 1.8,
+                  "width": 13.75,
+                  "height": 12.5,
                   "answers": [
                     "femur"
                   ]
@@ -392,10 +393,10 @@
               "image_url": "Images/Diagrams/JointClassifications3.png",
               "hotspots": [
                 {
-                  "x": "15.37",
-                  "y": "64.30",
-                  "width": "13.58",
-                  "height": "12.81",
+                  "x": 15.37,
+                  "y": 64.3,
+                  "width": 13.58,
+                  "height": 12.81,
                   "answers": [
                     "lateral miniscus"
                   ]
@@ -408,10 +409,10 @@
               "image_url": "Images/Diagrams/JointClassifications3.png",
               "hotspots": [
                 {
-                  "x": "18.25",
-                  "y": "83.05",
-                  "width": "13.41",
-                  "height": "12.19",
+                  "x": 18.25,
+                  "y": 83.05,
+                  "width": 13.41,
+                  "height": 12.19,
                   "answers": [
                     "fibula"
                   ]
@@ -424,10 +425,10 @@
               "image_url": "Images/Diagrams/JointClassifications3.png",
               "hotspots": [
                 {
-                  "x": "55.60",
-                  "y": "84.61",
-                  "width": "13.41",
-                  "height": "11.88",
+                  "x": 55.6,
+                  "y": 84.61,
+                  "width": 13.41,
+                  "height": 11.88,
                   "answers": [
                     "tibia"
                   ]
@@ -440,10 +441,10 @@
               "image_url": "Images/Diagrams/JointClassifications3.png",
               "hotspots": [
                 {
-                  "x": "64.77",
-                  "y": "70.55",
-                  "width": "13.58",
-                  "height": "12.19",
+                  "x": 64.77,
+                  "y": 70.55,
+                  "width": 13.58,
+                  "height": 12.19,
                   "answers": [
                     "acl"
                   ]
@@ -456,10 +457,10 @@
               "image_url": "Images/Diagrams/JointClassifications3.png",
               "hotspots": [
                 {
-                  "x": "69.02",
-                  "y": "55.23",
-                  "width": "13.58",
-                  "height": "12.19",
+                  "x": 69.02,
+                  "y": 55.23,
+                  "width": 13.58,
+                  "height": 12.19,
                   "answers": [
                     "medial miniscus"
                   ]
@@ -472,10 +473,10 @@
               "image_url": "Images/Diagrams/JointClassifications3.png",
               "hotspots": [
                 {
-                  "x": "64.60",
-                  "y": "37.73",
-                  "width": "13.58",
-                  "height": "12.19",
+                  "x": 64.6,
+                  "y": 37.73,
+                  "width": 13.58,
+                  "height": 12.19,
                   "answers": [
                     "mcl"
                   ]
@@ -539,10 +540,10 @@
               "image_url": "Images/Diagrams/JointArticulation1.png",
               "hotspots": [
                 {
-                  "x": "10.60",
-                  "y": "49.47",
-                  "width": "2.50",
-                  "height": "4.01",
+                  "x": 10.6,
+                  "y": 49.47,
+                  "width": 2.5,
+                  "height": 4.01,
                   "answers": [
                     "hyperextension"
                   ]
@@ -555,10 +556,10 @@
               "image_url": "Images/Diagrams/JointArticulation1.png",
               "hotspots": [
                 {
-                  "x": "19.66",
-                  "y": "48.05",
-                  "width": "2.41",
-                  "height": "4.01",
+                  "x": 19.66,
+                  "y": 48.05,
+                  "width": 2.41,
+                  "height": 4.01,
                   "answers": [
                     "extension"
                   ]
@@ -571,10 +572,10 @@
               "image_url": "Images/Diagrams/JointArticulation1.png",
               "hotspots": [
                 {
-                  "x": "22.93",
-                  "y": "55.60",
-                  "width": "2.41",
-                  "height": "4.01",
+                  "x": 22.93,
+                  "y": 55.6,
+                  "width": 2.41,
+                  "height": 4.01,
                   "answers": [
                     "flexion"
                   ]
@@ -587,10 +588,10 @@
               "image_url": "Images/Diagrams/JointArticulation1.png",
               "hotspots": [
                 {
-                  "x": "34.74",
-                  "y": "29.42",
-                  "width": "2.33",
-                  "height": "4.01",
+                  "x": 34.74,
+                  "y": 29.42,
+                  "width": 2.33,
+                  "height": 4.01,
                   "answers": [
                     "lateral flexion"
                   ]
@@ -603,10 +604,10 @@
               "image_url": "Images/Diagrams/JointArticulation1.png",
               "hotspots": [
                 {
-                  "x": "64.05",
-                  "y": "54.89",
-                  "width": "2.41",
-                  "height": "3.77",
+                  "x": 64.05,
+                  "y": 54.89,
+                  "width": 2.41,
+                  "height": 3.77,
                   "answers": [
                     "adduction"
                   ]
@@ -619,10 +620,10 @@
               "image_url": "Images/Diagrams/JointArticulation1.png",
               "hotspots": [
                 {
-                  "x": "69.22",
-                  "y": "39.33",
-                  "width": "2.33",
-                  "height": "4.25",
+                  "x": 69.22,
+                  "y": 39.33,
+                  "width": 2.33,
+                  "height": 4.25,
                   "answers": [
                     "abduction"
                   ]
@@ -635,10 +636,10 @@
               "image_url": "Images/Diagrams/JointArticulation1.png",
               "hotspots": [
                 {
-                  "x": "86.38",
-                  "y": "53.71",
-                  "width": "2.33",
-                  "height": "4.01",
+                  "x": 86.38,
+                  "y": 53.71,
+                  "width": 2.33,
+                  "height": 4.01,
                   "answers": [
                     "circumduction"
                   ]
@@ -651,10 +652,10 @@
               "image_url": "Images/Diagrams/JointArticulation2.png",
               "hotspots": [
                 {
-                  "x": "13.59",
-                  "y": "23.59",
-                  "width": "11.04",
-                  "height": "4.24",
+                  "x": 13.59,
+                  "y": 23.59,
+                  "width": 11.04,
+                  "height": 4.24,
                   "answers": [
                     "elevation"
                   ]
@@ -667,10 +668,10 @@
               "image_url": "Images/Diagrams/JointArticulation2.png",
               "hotspots": [
                 {
-                  "x": "28.04",
-                  "y": "19.77",
-                  "width": "11.15",
-                  "height": "4.10",
+                  "x": 28.04,
+                  "y": 19.77,
+                  "width": 11.15,
+                  "height": 4.1,
                   "answers": [
                     "depression"
                   ]
@@ -683,10 +684,10 @@
               "image_url": "Images/Diagrams/JointArticulation2.png",
               "hotspots": [
                 {
-                  "x": "66.61",
-                  "y": "16.37",
-                  "width": "11.15",
-                  "height": "3.96",
+                  "x": 66.61,
+                  "y": 16.37,
+                  "width": 11.15,
+                  "height": 3.96,
                   "answers": [
                     "protraction"
                   ]
@@ -699,10 +700,10 @@
               "image_url": "Images/Diagrams/JointArticulation2.png",
               "hotspots": [
                 {
-                  "x": "89.59",
-                  "y": "17.08",
-                  "width": "7.74",
-                  "height": "4.10",
+                  "x": 89.59,
+                  "y": 17.08,
+                  "width": 7.74,
+                  "height": 4.1,
                   "answers": [
                     "retraction"
                   ]
@@ -715,10 +716,10 @@
               "image_url": "Images/Diagrams/JointArticulation2.png",
               "hotspots": [
                 {
-                  "x": "5.63",
-                  "y": "42.11",
-                  "width": "9.44",
-                  "height": "3.68",
+                  "x": 5.63,
+                  "y": 42.11,
+                  "width": 9.44,
+                  "height": 3.68,
                   "answers": [
                     "inversion"
                   ]
@@ -731,10 +732,10 @@
               "image_url": "Images/Diagrams/JointArticulation2.png",
               "hotspots": [
                 {
-                  "x": "36.80",
-                  "y": "41.41",
-                  "width": "9.33",
-                  "height": "3.54",
+                  "x": 36.8,
+                  "y": 41.41,
+                  "width": 9.33,
+                  "height": 3.54,
                   "answers": [
                     "eversion"
                   ]
@@ -747,10 +748,10 @@
               "image_url": "Images/Diagrams/JointArticulation2.png",
               "hotspots": [
                 {
-                  "x": "57.05",
-                  "y": "44.80",
-                  "width": "9.22",
-                  "height": "3.39",
+                  "x": 57.05,
+                  "y": 44.8,
+                  "width": 9.22,
+                  "height": 3.39,
                   "answers": [
                     "dorsiflexion"
                   ]
@@ -763,10 +764,10 @@
               "image_url": "Images/Diagrams/JointArticulation2.png",
               "hotspots": [
                 {
-                  "x": "60.92",
-                  "y": "51.73",
-                  "width": "6.83",
-                  "height": "6.08",
+                  "x": 60.92,
+                  "y": 51.73,
+                  "width": 6.83,
+                  "height": 6.08,
                   "answers": [
                     "plantar flexion"
                   ]
@@ -779,10 +780,10 @@
               "image_url": "Images/Diagrams/JointArticulation2.png",
               "hotspots": [
                 {
-                  "x": "14.28",
-                  "y": "69.84",
-                  "width": "6.26",
-                  "height": "5.37",
+                  "x": 14.28,
+                  "y": 69.84,
+                  "width": 6.26,
+                  "height": 5.37,
                   "answers": [
                     "palm anterior"
                   ]
@@ -795,10 +796,10 @@
               "image_url": "Images/Diagrams/JointArticulation2.png",
               "hotspots": [
                 {
-                  "x": "28.50",
-                  "y": "69.84",
-                  "width": "7.17",
-                  "height": "5.23",
+                  "x": 28.5,
+                  "y": 69.84,
+                  "width": 7.17,
+                  "height": 5.23,
                   "answers": [
                     "palm posterior"
                   ]
@@ -811,10 +812,10 @@
               "image_url": "Images/Diagrams/JointArticulation2.png",
               "hotspots": [
                 {
-                  "x": "16.44",
-                  "y": "89.36",
-                  "width": "8.99",
-                  "height": "3.25",
+                  "x": 16.44,
+                  "y": 89.36,
+                  "width": 8.99,
+                  "height": 3.25,
                   "answers": [
                     "supination"
                   ]
@@ -827,10 +828,10 @@
               "image_url": "Images/Diagrams/JointArticulation2.png",
               "hotspots": [
                 {
-                  "x": "26.22",
-                  "y": "89.07",
-                  "width": "9.22",
-                  "height": "3.25",
+                  "x": 26.22,
+                  "y": 89.07,
+                  "width": 9.22,
+                  "height": 3.25,
                   "answers": [
                     "pronation"
                   ]
@@ -843,10 +844,10 @@
               "image_url": "Images/Diagrams/JointArticulation2.png",
               "hotspots": [
                 {
-                  "x": "63.54",
-                  "y": "75.50",
-                  "width": "8.99",
-                  "height": "3.54",
+                  "x": 63.54,
+                  "y": 75.5,
+                  "width": 8.99,
+                  "height": 3.54,
                   "answers": [
                     "opposition"
                   ]
