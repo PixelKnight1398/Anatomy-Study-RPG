@@ -907,7 +907,8 @@ function normalizeAnswer(answer) {
 function updateBattleUI() {
     const playerMaxHealth = GameState.playerCharacter.health + GameState.playerCharacter.armorHealthBonus;
     playerHealthBar.style.width = `${(GameState.playerHealth / playerMaxHealth) * 100}%`;
-    const currentGroup = GameState.currentQuest.groups[GameState.currentGroupIndex];
+    playerHealthText.textContent = `HP: ${GameState.playerHealth}/${playerMaxHealth}`;
+
     let minionMaxHealth;
     if (GameState.isBossBattle) {
         minionMaxHealth = 300; // Set to boss max health
@@ -915,8 +916,8 @@ function updateBattleUI() {
         const currentGroup = GameState.currentQuest.groups[GameState.currentGroupIndex];
         minionMaxHealth = currentGroup.questions.length * 10;
     }
+    
     enemyHealthBar.style.width = `${(GameState.minionHealth / minionMaxHealth) * 100}%`;
-    playerHealthText.textContent = `HP: ${GameState.playerHealth}/${playerMaxHealth}`;
     enemyHealthText.textContent = `HP: ${GameState.minionHealth}/${minionMaxHealth}`;
 }
 
