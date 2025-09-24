@@ -694,29 +694,15 @@ function handleAnswer(userAnswer, correctAnswers) {
     uiPanel.querySelector('.battle-ui-panel').appendChild(resultSpan);
 
     let damage = 0;
-    const currentGroup = GameState.currentQuest.groups[GameState.currentGroupIndex];
     
-    // Determine damage based on question type and turn
-    if (currentGroup.type === 'matching') {
-        if (GameState.currentTurn === 'player') {
-            damage = GameState.lastMatchingResult.correct * 10; // 10 damage per correct match
-            battleLog.textContent = `Correct! You matched ${GameState.lastMatchingResult.correct} pairs and deal ${damage} damage!`;
-            playerStats.classList.add('animate-attack');
-            enemyStats.classList.add('flash');
-            GameState.minionHealth -= damage;
-        } else {
-            damage = GameState.lastMatchingResult.incorrect * 10; // 10 damage per incorrect match
-            battleLog.textContent = `Defense failed! The minion matched ${GameState.lastMatchingResult.incorrect} pairs and deals ${damage} damage!`;
-            enemyStats.classList.add('animate-attack');
-            playerStats.classList.add('flash');
-            GameState.playerHealth -= damage;
-        }
-    } else { // Standard question type
+    // New logic to handle both boss and minion battles
+    if (GameState.isBossBattle) {
+        // Standard damage logic for boss fights
         if (GameState.currentTurn === 'player') {
             playerStats.classList.add('animate-attack');
             if (isCorrect) {
-                damage = 15;
-                battleLog.textContent = `Correct! You strike the minion for ${damage} damage!`;
+                damage = 10;
+                battleLog.textContent = `Correct! You strike the boss for ${damage} damage!`;
                 enemyStats.classList.add('flash');
             } else {
                 damage = 0;
@@ -724,12 +710,9 @@ function handleAnswer(userAnswer, correctAnswers) {
                 enemyStats.classList.add('jitter');
             }
             GameState.minionHealth -= damage;
-        } else { // It's the enemy's turn, player is defending
+        } else { // Enemy's turn
             enemyStats.classList.add('animate-attack');
-            damage = 10;
-            if (GameState.isBossBattle) {
-                damage *= 2;
-            }
+            damage = 20; // Boss deals more damage
             
             if (isCorrect) {
                 damage = 0;
@@ -740,6 +723,56 @@ function handleAnswer(userAnswer, correctAnswers) {
                 playerStats.classList.add('flash');
             }
             GameState.playerHealth -= damage;
+        }
+    } else {
+        // Existing logic for minion fights
+        const currentGroup = GameState.currentQuest.groups[GameState.currentGroupIndex];
+        
+        // Determine damage based on question type and turn
+        if (currentGroup.type === 'matching') {
+            if (GameState.currentTurn === 'player') {
+                damage = GameState.lastMatchingResult.correct * 10;
+                battleLog.textContent = `Correct! You matched ${GameState.lastMatchingResult.correct} pairs and deal ${damage} damage!`;
+                playerStats.classList.add('animate-attack');
+                enemyStats.classList.add('flash');
+                GameState.minionHealth -= damage;
+            } else {
+                damage = GameState.lastMatchingResult.incorrect * 10;
+                battleLog.textContent = `Defense failed! The minion matched ${GameState.lastMatchingResult.incorrect} pairs and deals ${damage} damage!`;
+                enemyStats.classList.add('animate-attack');
+                playerStats.classList.add('flash');
+                GameState.playerHealth -= damage;
+            }
+        } else { // Standard question type
+            if (GameState.currentTurn === 'player') {
+                playerStats.classList.add('animate-attack');
+                if (isCorrect) {
+                    damage = 10;
+                    battleLog.textContent = `Correct! You strike the minion for ${damage} damage!`;
+                    enemyStats.classList.add('flash');
+                } else {
+                    damage = 0;
+                    battleLog.textContent = "Incorrect! Your attack misses.";
+                    enemyStats.classList.add('jitter');
+                }
+                GameState.minionHealth -= damage;
+            } else { // It's the enemy's turn, player is defending
+                enemyStats.classList.add('animate-attack');
+                damage = 10;
+                if (GameState.isBossBattle) {
+                    damage *= 2;
+                }
+                
+                if (isCorrect) {
+                    damage = 0;
+                    battleLog.textContent = "Successful defense! You block the attack!";
+                    playerStats.classList.add('jitter');
+                } else {
+                    battleLog.textContent = `Defense failed! You take ${damage} damage!`;
+                    playerStats.classList.add('flash');
+                }
+                GameState.playerHealth -= damage;
+            }
         }
     }
 
