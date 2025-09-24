@@ -448,24 +448,34 @@ function startTurn() {
         battleLog.textContent = "The minion is attacking! Answer correctly to defend.";
     }
 
-    if (currentGroup.type === 'matching') {
-        renderMatchingQuestion(currentGroup.questions);
-    } else {
-        // This function now handles all question types based on the 'type' or 'question_type' property.
+    console.log(currentGroup);
+
+    if (GameState.isBossBattle) {
+        // For boss battles, assume all questions are standard single-answer types
         renderQuestion(currentQuestionData);
+    } else {
+        // For regular minion fights, check for matching type at the group level
+        if (currentGroup.type === 'matching') {
+            renderMatchingQuestion(currentGroup.questions);
+        } else {
+            renderQuestion(currentQuestionData);
+        }
     }
 }
 
 function startBossBattle() {
     GameState.isBossBattle = true;
     // Boss health is higher than a normal minion.
-    GameState.minionHealth = 150; 
+    GameState.minionHealth = 300; 
     enemyImage.src = GameState.currentQuest.boss_image || '';
     battleLog.textContent = "The final boss appears! Prepare for the ultimate challenge!";
     
     let allQuestions = [];
     GameState.currentQuest.groups.forEach(group => {
-        group.questions.forEach(q => allQuestions.push(q));
+        // Filter out matching groups from the boss question pool
+        if (group.type !== 'matching') {
+            group.questions.forEach(q => allQuestions.push(q));
+        }
     });
     GameState.shuffledQuestions = [];
     GameState.bossQuestionPool = shuffleArray(allQuestions);
@@ -865,8 +875,13 @@ function updateBattleUI() {
     const playerMaxHealth = GameState.playerCharacter.health + GameState.playerCharacter.armorHealthBonus;
     playerHealthBar.style.width = `${(GameState.playerHealth / playerMaxHealth) * 100}%`;
     const currentGroup = GameState.currentQuest.groups[GameState.currentGroupIndex];
-    // Minion max health is 10 times the number of questions.
-    const minionMaxHealth = currentGroup.questions.length * 10;
+    let minionMaxHealth;
+    if (GameState.isBossBattle) {
+        minionMaxHealth = 300; // Set to boss max health
+    } else {
+        const currentGroup = GameState.currentQuest.groups[GameState.currentGroupIndex];
+        minionMaxHealth = currentGroup.questions.length * 10;
+    }
     enemyHealthBar.style.width = `${(GameState.minionHealth / minionMaxHealth) * 100}%`;
     playerHealthText.textContent = `HP: ${GameState.playerHealth}/${playerMaxHealth}`;
     enemyHealthText.textContent = `HP: ${GameState.minionHealth}/${minionMaxHealth}`;
