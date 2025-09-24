@@ -95,6 +95,24 @@ input[type="text"]:focus {
     padding-bottom: 20px;
 }
 
+/* Also ensure the grid parent doesn't overflow */
+#matching-container {
+    width: 100%; 
+    max-width: 100%;
+}
+
+#matching-container select {
+    /* Constrains the select box to the grid column width */
+    width: 100%; 
+}
+
+/* Forces wrapping within the dropdown option list itself */
+#matching-container select option {
+    white-space: normal;
+    word-wrap: break-word;
+    max-width: 100%; /* Ensures the option text doesn't escape the dropdown */
+}
+
 /* New CSS to make quest panels look like paper */
 .quest-panel {
     border: 2px solid #000;

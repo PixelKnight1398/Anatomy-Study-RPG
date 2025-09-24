@@ -621,8 +621,8 @@ function renderMatchingQuestion(questions) {
 
     const matchingContainer = document.getElementById('matching-container');
     matchingContainer.style.display = 'grid';
-    matchingContainer.style.gridTemplateColumns = '1fr 1fr';
-    matchingContainer.style.gap = '20px';
+    matchingContainer.style.gridTemplateColumns = '1fr 2fr';
+    matchingContainer.style.gap = '10px';
 
     const shuffledQuestions = shuffleArray([...questions]);
     const shuffledAnswers = shuffleArray([...questions.map(q => q.answers[0])]);
