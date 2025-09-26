@@ -701,7 +701,7 @@ function handleAnswer(userAnswer, correctAnswers) {
         if (GameState.currentTurn === 'player') {
             playerStats.classList.add('animate-attack');
             if (isCorrect) {
-                damage = 10;
+                damage = 15;
                 battleLog.textContent = `Correct! You strike the boss for ${damage} damage!`;
                 enemyStats.classList.add('flash');
             } else {
@@ -712,7 +712,7 @@ function handleAnswer(userAnswer, correctAnswers) {
             GameState.minionHealth -= damage;
         } else { // Enemy's turn
             enemyStats.classList.add('animate-attack');
-            damage = 20; // Boss deals more damage
+            damage = 30; // Boss deals more damage
             
             if (isCorrect) {
                 damage = 0;
@@ -747,7 +747,7 @@ function handleAnswer(userAnswer, correctAnswers) {
             if (GameState.currentTurn === 'player') {
                 playerStats.classList.add('animate-attack');
                 if (isCorrect) {
-                    damage = 10;
+                    damage = 15;
                     battleLog.textContent = `Correct! You strike the minion for ${damage} damage!`;
                     enemyStats.classList.add('flash');
                 } else {
@@ -758,7 +758,7 @@ function handleAnswer(userAnswer, correctAnswers) {
                 GameState.minionHealth -= damage;
             } else { // It's the enemy's turn, player is defending
                 enemyStats.classList.add('animate-attack');
-                damage = 10;
+                damage = 20;
                 if (GameState.isBossBattle) {
                     damage *= 2;
                 }
@@ -952,7 +952,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         'Unit3Chapter9.json',
         'Unit3Chapter11.json',
         'Unit3Chapter11Section2.json',
-        'Unit3Chapter11Section3.json'
+        'Unit3Chapter11Section3.json',
+        'Unit3Chapter11Section4.json'
     ]);
     loadPlayerData();
     
