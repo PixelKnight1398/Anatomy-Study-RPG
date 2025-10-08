@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Set Builder</title>
+    <style>
+        /* General Styles for the Builder Page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f4f4f9;
+        }
+
+        .builder-container {
+            width: 90%;
+            max-width: 800px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Form Styling */
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input[type="text"], textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        #question-list {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+        }
+
+        .question-item {
+            padding: 10px;
+            margin-bottom: 10px;
+            border-bottom: 1px dashed #ccc;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .question-item:last-child {
+            border-bottom: none;
+        }
+
+        .question-item button {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        /* Button Styling */
+        #add-question-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        #generate-json-btn {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        /* JSON Output Area */
+        #json-output {
+            width: 100%;
+            height: 300px;
+            resize: vertical;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #e9e9e9;
+            margin-top: 10px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="builder-container">
+        <h2>Game Question Set Builder</h2>
+
+        <label for="unit-name">Unit Name (e.g., Joints and Muscles):</label>
+        <input type="text" id="unit-name" value="Joints and Muscles">
+
+        <label for="group-name">Group Name (e.g., Joint Nomenclature):</label>
+        <input type="text" id="group-name" value="New Question Group">
+
+        <label for="group-type">Group Type:</label>
+        <select id="group-type">
+            <option value="standard">Standard (MC/Written/TF)</option>
+            <option value="matching">Matching (Q on left, A on right)</option>
+        </select>
+        
+        <hr style="margin: 25px 0;">
+
+        <h3>Add New Question</h3>
+        
+        <label for="question-text">Question Text:</label>
+        <textarea id="question-text" rows="3" placeholder="Enter the question or term..."></textarea>
+
+        <label for="question-type-select">Question Type:</label>
+        <select id="question-type-select">
+            <option value="written">Written Answer</option>
+            <option value="multiple-choice">Multiple Choice</option>
+            <option value="true/false">True/False</option>
+        </select>
+
+        <div id="answers-container">
+            </div>
+
+        <button id="add-question-btn">Add Question to Group</button>
+
+        <hr style="margin: 25px 0;">
+
+        <h3>Current Questions in Group:</h3>
+        <div id="question-list">
+            <p style="text-align: center; color: #777;">No questions added yet.</p>
+        </div>
+
+        <hr style="margin: 25px 0;">
+
+        <button id="save-group-btn" style="background-color: #f0ad4e; margin-bottom: 10px;">Save Group and Start New</button>
+        
+        <button id="generate-json-btn">Generate Full JSON</button>
+
+        <label for="json-output">Generated JSON Code:</label>
+        <textarea id="json-output"></textarea>
+
+    </div>
+
+    <script>
+        const groupTypeSelect = document.getElementById('group-type');
+        const questionTypeSelect = document.getElementById('question-type-select');
+        const answersContainer = document.getElementById('answers-container');
+        const addQuestionBtn = document.getElementById('add-question-btn');
+        const questionListDiv = document.getElementById('question-list');
+        const generateJsonBtn = document.getElementById('generate-json-btn');
+        const saveGroupBtn = document.getElementById('save-group-btn'); // New Button Reference
+        const jsonOutput = document.getElementById('json-output');
+
+        // Reference the question text and main form area
+        const questionTextarea = document.getElementById('question-text');
+        const addNewQuestionSection = document.querySelector('h3:nth-of-type(2)');
+
+        // Group/Quest Info fields
+        const unitNameInput = document.getElementById('unit-name');
+        const groupNameInput = document.getElementById('group-name');
+
+        // --- Global Data Structures ---
+        let questionsArray = []; // Stores questions for the CURRENT group being built
+        let allGroupsArray = []; // Stores all SAVED group objects
+
+        // --- UI Update & Status ---
+        function updateStatusDisplay() {
+            const statusDiv = document.getElementById('builder-status') || document.createElement('div');
+            statusDiv.id = 'builder-status';
+            statusDiv.style.marginTop = '20px';
+            statusDiv.style.padding = '10px';
+            statusDiv.style.backgroundColor = '#d9edf7';
+            statusDiv.style.border = '1px solid #bce8f1';
+            statusDiv.style.borderRadius = '4px';
+            
+            statusDiv.innerHTML = `
+                <strong>Groups Saved:</strong> ${allGroupsArray.length}
+            `;
+            
+            // Insert the status display right before the first HR tag after the group info
+            if (!document.getElementById('builder-status')) {
+                groupTypeSelect.closest('.builder-container').insertBefore(statusDiv, document.querySelector('.builder-container hr:first-of-type'));
+            }
+        }
+
+        // --- Dynamic Form Rendering ---
+        function renderQuestionCreationArea() {
+            const groupType = groupTypeSelect.value;
+            const isMatching = groupType === 'matching';
+
+            if (isMatching) {
+                // Matching Group Setup
+                questionTextarea.style.display = 'none';
+                questionTypeSelect.style.display = 'none';
+                answersContainer.style.display = 'none';
+                addQuestionBtn.textContent = 'Add Matching Pair to Group';
+                
+                answersContainer.innerHTML = `
+                    <label for="matching-term">Term (This goes in 'answers' array):</label>
+                    <input type="text" id="matching-term" placeholder="e.g., flexion">
+                    <label for="matching-definition">Definition (This goes in 'question' field):</label>
+                    <textarea id="matching-definition" rows="2" placeholder="e.g., decrease in the angle between articulating bones"></textarea>
+                `;
+                answersContainer.style.display = 'block';
+                addNewQuestionSection.textContent = "Add New Matching Pair";
+
+            } else {
+                // Standard Group Setup
+                questionTextarea.style.display = 'block';
+                questionTypeSelect.style.display = 'block';
+                addQuestionBtn.textContent = 'Add Question to Group';
+
+                questionTypeSelect.innerHTML = `
+                    <option value="multiple-choice">Multiple Choice</option>
+                    <option value="true/false">True/False</option>
+                `;
+                
+                addNewQuestionSection.textContent = "Add New Question";
+
+                renderAnswersInput();
+            }
+            updateQuestionList(); // Update the list in case of group type change
+        }
+
+        function renderAnswersInput() {
+            // Only runs if the group type is NOT matching
+            if (groupTypeSelect.value === 'matching') return;
+
+            const selectedType = questionTypeSelect.value;
+            answersContainer.innerHTML = '';
+            
+            if (selectedType === 'true/false') {
+                answersContainer.innerHTML = `
+                    <label for="correct-answer">Correct Answer:</label>
+                    <select id="correct-answer">
+                        <option value="true">True</option>
+                        <option value="false">False</option>
+                    </select>
+                `;
+            } else if (selectedType === 'multiple-choice') {
+                answersContainer.innerHTML = `
+                    <p style="font-weight: bold; margin-bottom: 5px;">Answer Options (Correct option only):</p>
+                    <label for="mc-answer-correct">Correct Answer:</label>
+                    <input type="text" id="mc-answer-correct" placeholder="Correct option text">
+                    <p style="font-size: 0.9em; color: #777;">*Distractors will be pulled from the collective pool of all quest answers.</p>
+                `;
+            }
+        }
+
+
+        groupTypeSelect.addEventListener('change', renderQuestionCreationArea);
+        questionTypeSelect.addEventListener('change', renderAnswersInput);
+        
+        // Initial render on load
+        document.addEventListener('DOMContentLoaded', () => {
+            renderQuestionCreationArea();
+            updateStatusDisplay();
+        });
+        
+        // --- Add Question Logic ---
+        addQuestionBtn.addEventListener('click', () => {
+            const groupType = groupTypeSelect.value;
+            let newQuestion = {};
+            let questionText = '';
+            let valid = true;
+
+            if (groupType === 'matching') {
+                // Logic for Matching Pair
+                questionText = document.getElementById('matching-definition').value.trim();
+                const termText = document.getElementById('matching-term').value.trim();
+
+                if (!questionText || !termText) {
+                    alert('Please enter both a Term and a Definition for the matching pair.');
+                    valid = false;
+                }
+
+                if(valid) {
+                    newQuestion.question = questionText;
+                    newQuestion.answers = [termText];
+
+                    // Clear fields
+                    document.getElementById('matching-term').value = '';
+                    document.getElementById('matching-definition').value = '';
+                }
+
+            } else {
+                // Logic for Standard (MC/T/F)
+                questionText = questionTextarea.value.trim();
+                const questionType = questionTypeSelect.value;
+
+                if (!questionText) {
+                    alert('Please enter a question.');
+                    valid = false;
+                }
+
+                if(valid) {
+                    if (questionType === 'true/false') {
+                        const correctAnswer = document.getElementById('correct-answer').value.trim();
+                        newQuestion.question_type = 'true/false';
+                        newQuestion.answers = [correctAnswer];
+                    } else if (questionType === 'multiple-choice') {
+                        const correct = document.getElementById('mc-answer-correct').value.trim();
+                        
+                        if (!correct) {
+                            alert('Please enter the correct answer.');
+                            valid = false;
+                        } else {
+                            newQuestion.answers = [correct];
+                            newQuestion.question_type = 'multiple-choice'; 
+                        }
+                    }
+                }
+                
+                if (valid) {
+                    newQuestion.question = questionText;
+                    // Clear fields
+                    questionTextarea.value = '';
+                    renderAnswersInput(); 
+                }
+            }
+            
+            if (valid) {
+                questionsArray.push(newQuestion);
+                updateQuestionList();
+            }
+        });
+
+        // --- Remove Question Logic (Global) ---
+        function removeQuestion(index) {
+            questionsArray.splice(index, 1);
+            updateQuestionList();
+        }
+
+        // --- Update List UI ---
+        function updateQuestionList() {
+            if (questionsArray.length === 0) {
+                questionListDiv.innerHTML = '<p style="text-align: center; color: #777;">No questions added yet.</p>';
+                saveGroupBtn.disabled = true;
+                return;
+            }
+            
+            questionListDiv.innerHTML = questionsArray.map((q, index) => {
+                const groupType = groupTypeSelect.value;
+                const typeDisplay = groupType === 'matching' ? 'Matching' : (q.question_type === 'true/false' ? 'T/F' : 'MC');
+                const answerDisplay = q.answers.join(' | ');
+                const qPreview = q.question.length > 50 ? q.question.substring(0, 50) + '...' : q.question;
+                
+                return `
+                    <div class="question-item">
+                        <span>
+                            <strong>Type:</strong> ${typeDisplay} | 
+                            <strong>Q:</strong> ${qPreview} | 
+                            <strong>A:</strong> ${answerDisplay}
+                        </span>
+                        <button onclick="removeQuestion(${index})">Remove</button>
+                    </div>
+                `;
+            }).join('');
+            
+            window.removeQuestion = removeQuestion;
+            saveGroupBtn.disabled = false;
+        }
+
+        // --- Save Group Logic (New Functionality) ---
+        saveGroupBtn.addEventListener('click', () => {
+            const groupName = groupNameInput.value.trim();
+            const groupType = groupTypeSelect.value;
+
+            if (questionsArray.length === 0) {
+                alert('Cannot save. The current group has no questions.');
+                return;
+            }
+
+            if (!groupName) {
+                alert('Please enter a Group Name before saving.');
+                return;
+            }
+            
+            // 1. Create the Group Object
+            const groupObject = {
+                "group_name": groupName,
+                "questions": questionsArray
+            };
+            
+            if (groupType === 'matching') {
+                groupObject.type = 'matching';
+            }
+            
+            // 2. Save the Group and Reset
+            allGroupsArray.push(groupObject);
+            questionsArray = []; // Clear for next group
+            
+            // 3. Reset UI
+            groupNameInput.value = 'New Question Group';
+            groupTypeSelect.value = 'standard';
+            renderQuestionCreationArea(); // Reset to standard MC/T/F view
+            updateQuestionList();
+            updateStatusDisplay();
+
+            alert(`Group "${groupName}" saved! You can now start building the next group.`);
+        });
+
+        // --- Generate Final JSON ---
+        generateJsonBtn.addEventListener('click', () => {
+            const unitName = unitNameInput.value.trim();
+            const currentGroupName = groupNameInput.value.trim();
+
+            // Check if the current group is unsaved
+            if (questionsArray.length > 0) {
+                alert(`Please click "Save Group and Start New" to save the current group ("${currentGroupName}") before generating the final JSON.`);
+                return;
+            }
+            
+            if (allGroupsArray.length === 0) {
+                alert('You must save at least one group before generating the final JSON.');
+                return;
+            }
+            
+            // Use the saved groups array for the final structure
+            const finalJSON = {
+              "unit_id": "3", // Placeholder - manually update
+              "unit_name": unitName,
+              "quests": [
+                {
+                  "quest_id": "manual_quest", // Placeholder - manually update
+                  "quest_title": `Quest for ${unitName}`, // Placeholder - manually update based on Unit Name
+                  "quest_description": `A quest to master the topics within ${unitName}.`, // Placeholder - manually update
+                  "minion_images": [
+                    "Images/Monsters/CellMonster1.png",
+                    "Images/Monsters/FollicleMonster.png",
+                    "Images/Monsters/GlandMonster.png"
+                  ],
+                  "boss_image": "Images/Monsters/EpidermisMonster.png",
+                  "groups": allGroupsArray // USE THE ARRAY OF SAVED GROUPS
+                }
+              ]
+            };
+
+            jsonOutput.value = JSON.stringify(finalJSON, null, 2);
+            alert('JSON generated! Copy the text from the box below and save it as a new .json file.');
+        });
+    </script>
+
+</body>
+</html>
